@@ -5,7 +5,7 @@ import black from '../../public/images/Colors/black.jpg';
 import blue from '../../public/images/Colors/blue.jpg';
 import brown from '../../public/images/Colors/brown.jpg';
 import pink from '../../public/images/Colors/pink.jpg';
-import orange from '../../public/images/Colors/orange.jpg';
+import orange from '../../public/images/Colors/Orange.jpg';
 import red from '../../public/images/Colors/red.jpg';
 import yellow from '../../public/images/Colors/yellow.jpg';
 import white from '../../public/images/Colors/white.jpg';
@@ -128,8 +128,8 @@ function page() {
               src={aboutus}
               alt='Lab Grown Diamond'
               className='object-contain rounded shadow-md'
-              width={400}
-              height={400}
+              width={500}
+              height={500}
             />
             <p className='xl:mt-10 mt-3 text-xl font-bold text-white'>COMPANY PROFILE</p>
           </div>
