@@ -58,7 +58,7 @@ function Header() {
         <div className="flex items-center gap-4">
           <Image src={logo} className="w-auto h-auto" alt="DIAMOND ATELIER" />
           <div
-            className={`font-semibold text-md xl:text-2xl uppercase text-center cursor-pointer transition-colors duration-300 ${scrolled ? "text-black" : "text-white"}`}
+            className={`font-medium text-md font-montserrat xl:text-2xl uppercase text-center cursor-pointer transition-colors duration-300 ${scrolled ? "text-black" : "text-white"}`}
             onClick={() => router.push("/")}
           >
             Diamond Atelier

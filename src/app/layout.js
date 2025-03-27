@@ -1,4 +1,4 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, EB_Garamond, Arimo } from "next/font/google";
 import "./globals.css";
 import AppLayout from "@/layout/app/layout";
 
@@ -14,6 +14,19 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
+const arimo = Arimo({ 
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap', 
+  variable: "--font-arimo" 
+});
+
+const ebGaramond = EB_Garamond({ 
+  weight: ['400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  display: 'swap', 
+  variable: "--font-ebgaramond" 
+});
 
 export const metadata = {
   title: "Diamond Atelier Website",
@@ -26,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-playwrite ${inter.variable} ${montserrat.variable} antialiased`}
+        className={`font-playwrite ${inter.variable} ${montserrat.variable} ${ebGaramond.variable} ${arimo.variable} antialiased`}
       >
         <AppLayout>
         {children}

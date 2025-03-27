@@ -6,6 +6,7 @@ export default {
     "./src/app/**/*.{js,jsx,mdx}",
     "./src/layout/**/*.{js,jsx,mdx}",
   ],
+  mode: "jit",
   theme: {
     extend: {
       colors: {
@@ -13,7 +14,10 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        montserrat: ['var(--font-montserrat)'],
+        montserrat: ['var(--font-montserrat)',"sans-serif"],
+        ebgaramond: ["var(--font-ebgaramond)", "Georgia", "serif"],
+        montserratClassic: ["Montserrat Classic", "sans-serif"],
+        arimo: ["var(--font-arimo)", "sans-serif"],
       },
     },
   },

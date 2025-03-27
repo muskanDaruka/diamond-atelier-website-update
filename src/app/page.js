@@ -69,18 +69,18 @@ function page() {
         <div className="container mx-auto bg-[#efeeed] p-6 rounded-lg shadow-md">
           <div className="flex flex-col xl:flex-row items-center justify-center xl:text-start text-center">
             <div className="xl:w-1/2 text-[#6b6d6d] space-y-3">
-              <h1 className="xl:text-5xl text-xl font-normal">Welcome!</h1>
-              <p className="xl:text-xl text-sm font-normal">
+              <h1 className="xl:text-5xl text-xl font-normal font-montserratClassic">Welcome!</h1>
+              <p className="xl:text-xl text-sm font-normal font-montserrat">
                 We are Grower & Manufacturer of Lab Grown Diamonds since 2019
               </p>
-              <p className="xl:text-md text-xs font-normal">
+              <p className="xl:text-md text-xs font-normal font-montserrat">
                 Shop from a huge collection of Shapes, Sizes, and Colors.
               </p>
               <div className="flex justify-center items-center xl:justify-start space-x-3 mt-4">
-                <button className="px-4 py-2 bg-white text-[#6b6d6d] xl:text-sm text-xs border border-gray-300 rounded-xl shadow">
+                <button className="px-4 py-2 bg-white font-montserrat text-[#6b6d6d] xl:text-sm text-xs border border-gray-300 rounded-xl shadow">
                   VIEW INVENTORY
                 </button>
-                <button className="px-4 py-2 bg-white text-[#6b6d6d] xl:text-sm text-xs border border-gray-300 rounded-xl shadow">
+                <button className="px-4 py-2 bg-white font-montserrat text-[#6b6d6d] xl:text-sm text-xs border border-gray-300 rounded-xl shadow">
                   CORPORATE ENQUIRY
                 </button>
               </div>
@@ -101,9 +101,10 @@ function page() {
                 <Image
                   src={shape.img}
                   alt={shape.title}
+                  width={100}
                   className="object-contain mx-auto rounded"
                 />
-                <p className="mt-1 text-xs xl:text-sm font-normal rounded-lg p-2 bg-[#efeeed] font-montserrat">{shape.title}</p>
+                <p className="mt-1 text-xs xl:text-sm font-medium rounded-lg p-2 bg-[#efeeed] font-montserrat">{shape.title}</p>
               </div>
             ))}
           </div>
@@ -113,9 +114,10 @@ function page() {
                 <Image
                   src={color.img}
                   alt={color.title}
+                  width={100}
                   className="object-contain mx-auto rounded"
                 />
-                <p className="mt-1 text-xs xl:text-sm font-normal rounded-lg p-2 bg-[#efeeed] font-montserrat">{color.title}</p>
+                <p className="mt-1 text-xs xl:text-sm font-medium rounded-lg p-2 bg-[#efeeed] font-montserrat">{color.title}</p>
               </div>
             ))}
           </div>
@@ -131,21 +133,21 @@ function page() {
               width={500}
               height={500}
             />
-            <p className='xl:mt-10 mt-3 text-xl font-bold text-white'>COMPANY PROFILE</p>
+            <p className='xl:mt-10 mt-3 text-xl font-bold text-white font-arimo'>COMPANY PROFILE</p>
           </div>
           <div className='text-white max-w-2xl'>
-            <h1 className='text-4xl xl:text-6xl font-bold font-montserrat text-center'>About Us</h1>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed'>
+            <h1 className='text-4xl xl:text-6xl font-medium text-center font-ebgaramond' >About Us</h1>
+            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'>
               We are the grower and manufacturer of lab-grown diamonds since 2019, situated in Surat, Gujarat, India.
               Our monthly manufacturing capacity exceeds 20,000 carats, spanning a range from 0.01 to 20 carats.
               Our artistic workshop encompasses the entire process of rough to polished diamonds. We have expertise in
               layouts, side stone pairs, and colored stones, positioning us as a large-scale reputable supplier in the USA.
             </p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed'><strong>Competitive Pricing:</strong> Our diamonds are priced
+            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Competitive Pricing:</strong> Our diamonds are priced
               competitively, creating favorable opportunities for future business growth.</p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed'><strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale,
+            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale,
               readily available inventory at our New York sales house to meet global demands efficiently.</p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed'><strong>Large Carat Stone Available:</strong> Our stock includes
+            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Large Carat Stone Available:</strong> Our stock includes
               diamonds ranging from 5 to 12 carats, available in both Round and Fancy shapes, providing diverse options for
               customers.</p>
           </div>

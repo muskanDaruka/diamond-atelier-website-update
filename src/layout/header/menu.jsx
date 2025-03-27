@@ -14,12 +14,12 @@ function Menu({ route, scrolled }) {
           {item.path || item.href ? (
             <Link
               href={item.path || item.href}
-              className="transition-colors duration-300 hover:text-gray-500"
+              className="transition-colors duration-300 hover:text-gray-500 font-montserrat"
             >
               {item.label}
             </Link>
           ) : (
-            <span>{item.label}</span>
+            <span className="font-montserrat">{item.label}</span>
           )}
           {item.items && <MenuList list={item.items} />}
         </li>
