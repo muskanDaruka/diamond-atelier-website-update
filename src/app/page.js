@@ -28,7 +28,8 @@ import dog from '../../public/images/Shapes/Dog.jpg';
 import unicorn from '../../public/images/Shapes/Unicorn.jpg';
 import emerald from '../../public/images/basic shapes/emerald.jpg';
 import aboutus from '../../public/images/banner/about-us.png';
-
+import Section from '@/components/Section';
+import creditandmemo from '../../public/images/banner/creditandmemo.jpg'
 
 const colors = [
   { id: 1, img: black, title: "Black" },
@@ -123,33 +124,76 @@ function page() {
           </div>
         </div>
       </div>
-      <div className='p-10 bg-[#c4b8ad] font-montserrat cursor-pointer'>
-        <div className='flex flex-col md:flex-row items-center xl:justify-around'>
-          <div className='flex flex-col items-center text-center xl:text-left md:items-start mb-6 md:mb-0'>
+      <div className="p-10 bg-[#c4b8ad] font-montserrat cursor-pointer">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <Image
               src={aboutus}
-              alt='Lab Grown Diamond'
-              className='object-contain rounded shadow-md'
+              alt="Lab Grown Diamond"
+              className="object-cover rounded-lg shadow-lg"
               width={500}
               height={500}
             />
-            <p className='xl:mt-10 mt-3 text-xl font-bold text-white font-arimo'>COMPANY PROFILE</p>
+            <p className="mt-6 text-xl font-bold text-white font-arimo">COMPANY PROFILE</p>
           </div>
-          <div className='text-white max-w-2xl'>
-            <h1 className='text-4xl xl:text-6xl font-medium text-center font-ebgaramond' >About Us</h1>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'>
+          <div className="text-white xl:max-w-3xl">
+            <h1 className="text-5xl xl:text-6xl font-medium text-center font-ebgaramond">
+              About Us
+            </h1>
+            <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
               We are the grower and manufacturer of lab-grown diamonds since 2019, situated in Surat, Gujarat, India.
               Our monthly manufacturing capacity exceeds 20,000 carats, spanning a range from 0.01 to 20 carats.
               Our artistic workshop encompasses the entire process of rough to polished diamonds. We have expertise in
               layouts, side stone pairs, and colored stones, positioning us as a large-scale reputable supplier in the USA.
             </p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Competitive Pricing:</strong> Our diamonds are priced
-              competitively, creating favorable opportunities for future business growth.</p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale,
-              readily available inventory at our New York sales house to meet global demands efficiently.</p>
-            <p className='mt-4 xl:text-lg md:text-md text-md leading-relaxed font-montserrat'><strong>Large Carat Stone Available:</strong> Our stock includes
-              diamonds ranging from 5 to 12 carats, available in both Round and Fancy shapes, providing diverse options for
-              customers.</p>
+            <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+              <strong>Competitive Pricing:</strong> Our diamonds are priced competitively, creating favorable opportunities for future business growth.
+            </p>
+            <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+              <strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale, readily available inventory at our New York sales house to meet global demands efficiently.
+            </p>
+            <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+              <strong>Large Carat Stone Available:</strong> Our stock includes diamonds ranging from 5 to 12 carats, available in both Round and Fancy shapes, providing diverse options for customers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Section />
+      <div className="container mx-auto px-4 py-8 cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          <div className="flex flex-col text-center justify-center">
+            <h1 className="text-6xl font-bold text-[#c4b8ad] tracking-wide leading-tight font-ebgaramond">
+              CREDIT & MEMO
+            </h1>
+            <Image
+              src={creditandmemo}
+              alt="Credit & Memo"
+              className="w-full mt-4 h-full object-cover"
+            />
+          </div>
+          <div className="bg-[#c4b8ad] p-6 text-white rounded-lg flex flex-col justify-center">
+            <p className="text-lg text-justify font-montserrat">
+              Many of our trader clients need a vast option of diamonds to showcase
+              to their customers. To address this, we provide them with diamonds
+              on credit and memo terms for 7 to 30 days. We believe in maintaining
+              a long-term business relationship and thus, we back you with payment
+              support.
+            </p>
+            <div className="mt-6 space-y-4 font-montserrat">
+              <a
+                href="/credit-term"
+                className="block text-center text-black bg-white py-3 rounded-lg font-medium"
+              >
+                CREDIT & MEMO TERMS
+              </a>
+              <a
+                href="/memo-term"
+                className="block text-center text-black bg-white py-3 rounded-lg font-medium"
+              >
+                KYC FORM
+              </a>
+            </div>
           </div>
         </div>
       </div>
