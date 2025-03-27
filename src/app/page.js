@@ -68,7 +68,7 @@ function page() {
       <div className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-[#adafa7]">
         <div className="container mx-auto bg-[#efeeed] p-6 rounded-lg shadow-md">
           <div className="flex flex-col xl:flex-row items-center justify-center xl:text-start text-center">
-            <div className="xl:w-1/2 text-[#6b6d6d] space-y-3">
+            <div className="xl:w-1/2 text-[#6b6d6d] space-y-3 cursor-pointer">
               <h1 className="xl:text-5xl text-xl font-normal font-montserratClassic">Welcome!</h1>
               <p className="xl:text-xl text-sm font-normal font-montserrat">
                 We are Grower & Manufacturer of Lab Grown Diamonds since 2019
@@ -95,7 +95,7 @@ function page() {
           </div>
         </div>
         <div className="p-1 font-montserrat">
-          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-13 gap-4 mb-6 m-5">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-13 gap-4 mb-6 m-5 cursor-pointer">
             {shapes.map((shape) => (
               <div key={shape.id} className="text-center">
                 <Image
@@ -108,7 +108,7 @@ function page() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-13 gap-4 mb-6 m-5">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-13 gap-4 mb-6 m-5 cursor-pointer">
             {colors.map((color) => (
               <div key={color.id} className="text-center">
                 <Image
@@ -123,7 +123,7 @@ function page() {
           </div>
         </div>
       </div>
-      <div className='p-10 bg-[#c4b8ad] font-montserrat'>
+      <div className='p-10 bg-[#c4b8ad] font-montserrat cursor-pointer'>
         <div className='flex flex-col md:flex-row items-center xl:justify-around'>
           <div className='flex flex-col items-center text-center xl:text-left md:items-start mb-6 md:mb-0'>
             <Image
