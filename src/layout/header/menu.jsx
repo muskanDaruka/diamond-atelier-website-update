@@ -1,8 +1,15 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React,{useState} from "react";
 import MenuList from "./menu-list";
 
 function Menu({ route, scrolled }) {
+  const [openMenu, setOpenMenu] = useState(null);
+
+  const handleToggle = (id) => {
+    setOpenMenu((prev) => (prev === id ? null : id));
+  };
+
   return (
     <ul className="lg:flex flex-col lg:flex-row justify-around lg:mt-0 mt-5 xl:text-xl w-full cursor-pointer relative">
       {route.map((item) => (
@@ -11,6 +18,10 @@ function Menu({ route, scrolled }) {
           className={`group relative my-2 text-start m-2 p-2 lg:border-none border border-[#d9d1bc] rounded-md font-montserrat 
           ${scrolled ? "text-black" : "text-white"} hover:underline hover:underline-offset-4`}
         >
+          <div
+            className="flex justify-between items-center"
+            onClick={() => item.items && handleToggle(item.id)}
+          >
           {item.path || item.href ? (
             <Link
               href={item.path || item.href}
@@ -21,7 +32,8 @@ function Menu({ route, scrolled }) {
           ) : (
             <span className="font-montserrat">{item.label}</span>
           )}
-          {item.items && <MenuList list={item.items} />}
+          </div>
+          {item.items && <MenuList list={item.items} isOpen={openMenu === item.id}/>}
         </li>
       ))}
     </ul>
