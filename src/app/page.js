@@ -142,7 +142,7 @@ function page() {
           ))}
         </div>
       </motion.div>
-      <div className="p-10 font-montserrat cursor-pointer min-h-screen bg-[#c4b8ad]">
+      <div className="p-10 font-montserrat cursor-pointer min-h-screen">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -158,7 +158,7 @@ function page() {
               width={500}
               height={500}
             />
-            <p className="mt-6 text-xl font-bold text-white font-arimo">
+            <p className="mt-6 text-xl font-bold text-[#c4b8ad] font-arimo">
               COMPANY PROFILE
             </p>
           </motion.div>
@@ -167,7 +167,7 @@ function page() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
-            className="flex items-center justify-center min-h-screen"
+            className="bg-[#c4b8ad] p-6 text-white rounded-lg flex flex-col justify-center"
           >
             <div className="text-white xl:max-w-3xl">
               <h1 className="text-5xl xl:text-6xl font-medium text-center font-ebgaramond">
