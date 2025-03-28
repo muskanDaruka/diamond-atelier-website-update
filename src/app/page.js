@@ -32,6 +32,7 @@ import aboutus from '../../public/images/banner/about-us.png';
 import Section from '@/components/Section';
 import creditandmemo from '../../public/images/banner/creditandmemo.jpg'
 import { motion } from "framer-motion";
+import BannerImageGallery from '@/components/BannerImageGallery';
 
 const colors = [
   { id: 1, img: black, title: "Black" },
@@ -115,32 +116,7 @@ function page() {
             </motion.div>
           </div>
         </motion.div>
-        <div className="p-1 font-montserrat">
-          {[shapes, colors].map((items, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-13 gap-4 mb-6 m-5 cursor-pointer"
-            >
-              {items.map((item) => (
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false, amount: 0.2 }}
-                  transition={{ duration: 0.4, delay: item.id * 0.1 }}
-                  className="text-center"
-                >
-                  <Image src={item.img} alt={item.title} width={100} className="object-contain mx-auto rounded" />
-                  <p className="mt-1 text-xs xl:text-sm font-medium rounded-lg p-2 bg-[#efeeed] font-montserrat">{item.title}</p>
-                </motion.div>
-              ))}
-            </motion.div>
-          ))}
-        </div>
+        <BannerImageGallery/>
         <div className="p-10 font-montserrat cursor-pointer min-h-screen">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <motion.div
