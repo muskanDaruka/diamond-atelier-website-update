@@ -75,7 +75,6 @@ function page() {
         transition={{ duration: 1 }}
         className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-gradient-to-b from-[#adafa7] to-[#c4b8ad]"
       >
-        {/* First Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -116,8 +115,6 @@ function page() {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* Shape & Colors Section */}
         <div className="p-1 font-montserrat">
           {[shapes, colors].map((items, index) => (
             <motion.div
@@ -144,8 +141,6 @@ function page() {
             </motion.div>
           ))}
         </div>
-
-        {/* Second Section (About Us) */}
         <div className="p-10 font-montserrat cursor-pointer min-h-screen">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <motion.div
@@ -158,7 +153,7 @@ function page() {
               <Image
                 src={aboutus}
                 alt="Lab Grown Diamond"
-                className="object-cover rounded-lg shadow-lg"
+                className="object-cover rounded-lg shadow-lg "
                 width={500}
                 height={500}
               />
@@ -195,7 +190,6 @@ function page() {
           </div>
         </div>
       </motion.div>
-
       <Section />
       <div className="container mx-auto px-4 py-8 cursor-pointer min-h-screen flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -212,7 +206,7 @@ function page() {
             <Image
               src={creditandmemo}
               alt="Credit & Memo"
-              className="w-full mt-4 h-full object-cover"
+              className="w-full mt-4 h-full object-cover "
             />
           </motion.div>
           <motion.div
@@ -231,13 +225,13 @@ function page() {
             </p>
             <div className="mt-6 space-y-4 font-montserrat">
               <a
-                href="/credit-term"
+                href="#"
                 className="block text-center text-black bg-white py-3 rounded-lg font-medium"
               >
                 CREDIT & MEMO TERMS
               </a>
               <a
-                href="/memo-term"
+                href="#"
                 className="block text-center text-black bg-white py-3 rounded-lg font-medium"
               >
                 KYC FORM
