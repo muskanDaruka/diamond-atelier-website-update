@@ -73,8 +73,9 @@ function page() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 1 }}
-        className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-[#adafa7]"
+        className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-gradient-to-b from-[#adafa7] to-[#c4b8ad]"
       >
+        {/* First Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -115,6 +116,8 @@ function page() {
             </motion.div>
           </div>
         </motion.div>
+
+        {/* Shape & Colors Section */}
         <div className="p-1 font-montserrat">
           {[shapes, colors].map((items, index) => (
             <motion.div
@@ -141,57 +144,58 @@ function page() {
             </motion.div>
           ))}
         </div>
-      </motion.div>
-      <div className="p-10 bg-[#c4b8ad] font-montserrat cursor-pointer min-h-screen">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="flex flex-col items-center md:items-start text-center md:text-left"
-          >
-            <Image
-              src={aboutus}
-              alt="Lab Grown Diamond"
-              className="object-cover rounded-lg shadow-lg"
-              width={500}
-              height={500}
-            />
-            <p className="mt-6 text-xl font-bold text-white font-arimo">
-              COMPANY PROFILE
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
-            className="flex items-center justify-center min-h-screen"
-          >
-            <div className="text-white xl:max-w-3xl">
-              <h1 className="text-5xl xl:text-6xl font-medium text-center font-ebgaramond">
-                About Us
-              </h1>
-              <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
-                We are the grower and manufacturer of lab-grown diamonds since 2019, situated in Surat, Gujarat, India.
-                Our monthly manufacturing capacity exceeds 20,000 carats, spanning a range from 0.01 to 20 carats.
-                Our artistic workshop encompasses the entire process of rough to polished diamonds. We have expertise in
-                layouts, side stone pairs, and colored stones, positioning us as a large-scale reputable supplier in the USA.
+
+        {/* Second Section (About Us) */}
+        <div className="p-10 font-montserrat cursor-pointer min-h-screen">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="flex flex-col items-center md:items-start text-center md:text-left"
+            >
+              <Image
+                src={aboutus}
+                alt="Lab Grown Diamond"
+                className="object-cover rounded-lg shadow-lg"
+                width={500}
+                height={500}
+              />
+              <p className="mt-6 text-xl font-bold text-white font-arimo">
+                COMPANY PROFILE
               </p>
-              <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
-                <strong>Competitive Pricing:</strong> Our diamonds are priced competitively, creating favorable opportunities for future business growth.
-              </p>
-              <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
-                <strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale, readily available inventory at our New York sales house to meet global demands efficiently.
-              </p>
-              <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
-                <strong>Large Carat Stone Available:</strong> Our stock includes diamonds ranging from 5 to 12 carats, available in both Round and Fancy shapes, providing diverse options for customers.
-              </p>
-            </div>
-          </motion.div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
+              className="flex items-center justify-center min-h-screen"
+            >
+              <div className="text-white xl:max-w-3xl">
+                <h1 className="text-5xl xl:text-6xl font-medium text-center font-ebgaramond">
+                  About Us
+                </h1>
+                <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+                  We are the grower and manufacturer of lab-grown diamonds since 2019, situated in Surat, Gujarat, India.
+                  Our monthly manufacturing capacity exceeds 20,000 carats, spanning a range from 0.01 to 20 carats.
+                </p>
+                <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+                  <strong>Competitive Pricing:</strong> Our diamonds are priced competitively, creating favorable opportunities for future business growth.
+                </p>
+                <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+                  <strong>Ready-to-Sell Inventory:</strong> We maintain a large-scale, readily available inventory at our New York sales house to meet global demands efficiently.
+                </p>
+                <p className="mt-4 xl:text-lg md:text-md text-md leading-relaxed">
+                  <strong>Large Carat Stone Available:</strong> Our stock includes diamonds ranging from 5 to 12 carats, available in both Round and Fancy shapes, providing diverse options for customers.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
+
       <Section />
       <div className="container mx-auto px-4 py-8 cursor-pointer min-h-screen flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -214,7 +218,7 @@ function page() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.1}}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="bg-[#c4b8ad] p-6 text-white rounded-lg flex flex-col justify-center"
           >
