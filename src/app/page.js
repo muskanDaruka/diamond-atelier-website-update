@@ -73,7 +73,7 @@ function page() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 1 }}
-        className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-[#adafa7]"
+        className="xl:pt-[8%] pt-[18%] font-montserrat text-3xl font-bold bg-gradient-to-b from-[#adafa7] to-[#ffffff]"
       >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
