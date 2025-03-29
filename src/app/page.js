@@ -135,7 +135,7 @@ function page() {
                   className="text-center"
                 >
                   <Image src={item.img} alt={item.title} width={100} className="object-contain mx-auto rounded" />
-                  <p className="mt-1 text-xs xl:text-sm font-medium rounded-lg p-2 bg-[#efeeed] font-montserrat">{item.title}</p>
+                  <p className="mt-1 text-xs xl:text-sm font-medium rounded-lg p-2 bg-[#d6d4d2] font-montserrat">{item.title}</p>
                 </motion.div>
               ))}
             </motion.div>
