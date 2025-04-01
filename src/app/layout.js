@@ -1,4 +1,4 @@
-import { Inter, Montserrat, EB_Garamond, Arimo } from "next/font/google";
+import { Inter, Montserrat, EB_Garamond, Arimo} from "next/font/google";
 import "./globals.css";
 import AppLayout from "@/layout/app/layout";
 
@@ -14,18 +14,18 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-const arimo = Arimo({ 
+const arimo = Arimo({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap', 
-  variable: "--font-arimo" 
+  variable: "--font-arimo"
 });
 
-const ebGaramond = EB_Garamond({ 
+const ebGaramond = EB_Garamond({
   weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
   display: 'swap', 
-  variable: "--font-ebgaramond" 
+  variable: "--font-ebgaramond"
 });
 
 export const metadata = {
@@ -33,16 +33,14 @@ export const metadata = {
   description: "Wide range of Diamond collections",
 };
 
-export default function RootLayout({
-  children,
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`font-playwrite ${inter.variable} ${montserrat.variable} ${ebGaramond.variable} ${arimo.variable} antialiased`}
+        className={`font-playwrite ${inter.variable} ${montserrat.variable} ${ebGaramond.variable} ${arimo.variable} antialiased font-oldstandard font-migra`}
       >
         <AppLayout>
-        {children}
+          {children}
         </AppLayout>
       </body>
     </html>

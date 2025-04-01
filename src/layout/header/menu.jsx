@@ -16,7 +16,7 @@ function Menu({ route, scrolled }) {
         <li
           key={item.id}
           className={`group relative my-2 text-start m-2 p-2 lg:border-none border border-[#d9d1bc] rounded-md font-montserrat 
-          ${scrolled ? "text-black" : "text-white"} hover:underline hover:underline-offset-4`}
+          ${scrolled ? "text-white" : "text-white"} hover:underline hover:underline-offset-4`}
         >
           <div
             className="flex justify-between items-center"
@@ -25,7 +25,7 @@ function Menu({ route, scrolled }) {
           {item.path || item.href ? (
             <Link
               href={item.path || item.href}
-              className="transition-colors duration-300 hover:text-gray-500 font-montserrat"
+              className="transition-colors duration-300 hover:text-gray-300 font-montserrat"
             >
               {item.label}
             </Link>
