@@ -1,4 +1,4 @@
-import Labgrown from '@/components/About/labgrown'
+import Labgrown from '@/components/About/Labgrown'
 import React from 'react'
 
 function page() {
