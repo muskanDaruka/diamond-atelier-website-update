@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
 import banner from "../../../public/images/banner/banner-image.png";
 import horse from "../../../public/images/banner/horse.png";
 import diamond from "../../../public/images/banner/diamond.png";
