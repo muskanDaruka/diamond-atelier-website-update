@@ -25,7 +25,15 @@ function Header() {
   }, []);
   
   const route = [
-    { id: 1, label: "ABOUT", path: "/" },
+    { id: 1, label: "ABOUT", path: "/" ,
+      items: [
+        { label: "LABGROWN", path: "/labgrown" },
+        { label: "DIFFERENCE", path: "/difference" },
+        { label: "METHODS OF GROWING", path: "/methods" },
+        { label: "WHY LAB", path: "#" },
+        { label: "DIAMOND SIMULANTS", path: "#" },
+        { label: "MYTHS & FACTS", path: "#" },
+      ],},
     { id: 3, label: "GALLERY", path: "#",},
     { id: 2, label: "INVENTORY", href: "https://inventory.diamondatelier.in/" },
     { id: 4, label: "CONTACT US", path: "#" },
@@ -37,7 +45,7 @@ function Header() {
     <div className="lg:hidden cursor-pointer" onClick={() => setOpen(!open)}>
       {open ? <IoClose size={25} color="white" /> : <IoReorderThree size={25} color="white" />}
     </div>
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 pl-4">
       <div
         className="cursor-pointer transition-colors duration-300"
         onClick={() => router.push("/")}

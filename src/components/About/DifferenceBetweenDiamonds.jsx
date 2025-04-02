@@ -1,0 +1,130 @@
+"use client";
+import React from 'react';
+import rough from '../../../public/images/about/rough.png';
+import seed from '../../../public/images/about/seed.png';
+import Image from 'next/image';
+import { BiSolidDollarCircle } from "react-icons/bi";
+import { GiFruitTree, GiCutDiamond } from "react-icons/gi";
+import { FaShareSquare } from "react-icons/fa";
+import diamond from "../../../public/images/about/diamond.png";
+import { motion } from "framer-motion";
+
+const fadeInVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+function DifferenceBetweenDiamonds() {
+    const commitmentList = [
+        { id: 1, icon: <BiSolidDollarCircle size={40} />, title: "PRICE", description: "A Lab Grown diamond of the same grade (according to the 4C’s) will be priced about 8% - 12% of natural diamonds with the same carat, cut, color, and clarity.", img: diamond },
+        { id: 2, icon: <GiFruitTree size={40} />, title: "VALUE", description: "Initially, when Lab Grown diamonds came to the market, no one took it seriously. But, as they say, change is the law of nature. Lab Grown diamonds became evident in the market and even the most sophisticated gem laboratories certified them as diamonds.", content: "Does it fade or get cloudy over time? No! It stays forever just like a mined diamond." },
+        { id: 3, icon: <GiCutDiamond size={40} />, title: "SUSTAINABILITY", description: "We have a duty to care for the environment. Lab grown diamonds do not involve any excavation or dispersion of natural resources. The future is lab-grown diamonds.", content: "For every carat of diamond that is mined, nearly 100 sq ft of land is disturbed and almost 6000 lbs of mineral waste is created." },
+        { id: 4, icon: <FaShareSquare size={40} />, title: "FUTURE", description: "Lab-grown diamonds are positioned as the future of the diamond industry, driven by ethical, environmentally friendly characteristics, and technological advancements.", content: "They have a projected growth rate of 22% between 2021 and 2026" }
+    ];
+
+    return (
+        <div>
+            <section className="relative bg-black pt-24 pb-10">
+                <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    <h1 className="uppercase font-medium font-montserrat text-white text-center xl:text-3xl md:text-2xl text-md">
+                        Difference Between Earth Mined and Lab Grown Diamonds
+                    </h1>
+                </motion.div>
+                <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    <div className='flex xl:flex-row md:flex-row flex-col justify-center items-center'>
+
+                        <div className="gap-4 pt-2">
+                            <button className="bg-[#153a66] uppercase text-white px-11 py-1 ml-3">Rough Stone</button>
+                            <Image src={rough} alt="diamonds" width={200} className="object-contain px-10 py-5 ms-3 mr-4 bg-white" />
+                        </div>
+                        <div className="xl:pt-1 pt-4">
+                            <button className="bg-[#153a66] uppercase text-white px-10 py-1">Diamond Seed</button>
+                            <Image src={seed} alt="diamonds" width={200} className="object-contain px-10 py-6.5 xl:mr-5 md:mr-5 bg-white " />
+                        </div>
+
+                    </div>
+                </motion.div>
+            </section>
+            <section className="bg-[#e9e9e9] p-6">
+                <motion.div
+                    className="flex flex-col items-center text-center h-full"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.3 }}
+                    variants={fadeInVariants}
+                >
+                    <p className="text-[#6b6d6d] md:text-md text-sm xl:text-xl">
+                        The only difference between a lab-created diamond and a mined diamond is their origin. A lab-grown diamond is created in a lab using extraordinary technology that replicates the natural diamond formation process. The result is a man-made diamond with identical physical, chemical, and optical properties to a mined diamond.
+                    </p>
+                </motion.div>
+                <div className="text-center py-10 font-montserrat">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {commitmentList.map((item) => (
+                            <motion.div
+                                key={item.id}
+                                className="flex flex-col items-center text-center h-full"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: false, amount: 0.3 }}
+                                variants={fadeInVariants}
+                            >
+                                <div className="p-4 bg-white rounded-full mb-4">{item.icon}</div>
+                                <h3 className="text-2xl font-medium">{item.title}</h3>
+                                <div className="flex flex-col items-center text-center bg-white p-6 shadow-md mt-4 flex-grow w-full min-h-[200px]">
+                                    <p className="text-sm text-gray-600 mt-2">{item.description}</p>
+                                </div>
+                                {item.content && (
+                                    <motion.div
+                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-6 shadow-md flex-grow w-full min-h-[200px]"
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: false, amount: 0.3 }}
+                                        variants={fadeInVariants}
+                                    >
+                                        <p className="text-sm text-white mt-2">{item.content}</p>
+                                    </motion.div>
+                                )}
+                                {item.id === 1 && (
+                                    <motion.div
+                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-2 pt-14 shadow-md flex-grow w-full"
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: false, amount: 0.3 }}
+                                        variants={fadeInVariants}
+                                    >
+                                        <div className="flex justify-evenly items-center w-full">
+                                            <div className="flex flex-col items-center">
+                                                <Image src={diamond} className="rounded-full" alt="Natural Diamond" />
+                                                <p>Natural Diamond $10,000</p>
+                                            </div>
+                                            <div className="flex flex-col items-center">
+                                                <Image src={diamond} alt="Lab Grown Diamond" className="rounded-full" />
+                                                <p>Lab Grown Diamond $1,000</p>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}
+
+export default DifferenceBetweenDiamonds;

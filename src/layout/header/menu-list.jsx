@@ -8,7 +8,7 @@ function MenuList({ list = [], isOpen }) {
       <ul className="py-1">
         {list.map((subitem, subIndex) => (
           <li key={subIndex} className="px-4 py-2 hover:bg-stone-100 rounded-md whitespace-nowrap">
-            <Link href={subitem.path || "#"} className="text-base block font-montserrat xl:text-[#adafa7] text-black">
+            <Link href={subitem.path || "#"} className="text-base block font-montserrat xl:text-black text-black">
               {subitem.label}
             </Link>
           </li>
