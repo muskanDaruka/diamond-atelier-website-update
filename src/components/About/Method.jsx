@@ -45,7 +45,7 @@ function Method() {
             </section>
             <section className="bg-[#e9e9e9] p-6">
                 <motion.p
-                    className="bg-[#d9d9d9] p-4 shadow-md"
+                    className="p-4"
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6}}
@@ -53,7 +53,7 @@ function Method() {
                 >
                     Creating diamonds in a lab is still a fairly new technology, but is growing in popularity. The composition is identical to that of earth-mined diamonds, but the methods in which they are derived differ greatly. There are two different methods for farming lab-grown diamonds: High Pressure High Temperature (HPHT) and Chemical Vapor Deposition (CVD). The quality is continually increasing, and to the naked eye, you won’t have a clue that you are looking at a manufactured creation.
                 </motion.p>
-                <div className="flex flex-col md:flex-row xl:flex-row justify-around items-stretch p-6">
+                <div className="flex flex-col md:flex-row xl:flex-row justify-around items-stretch p-6 mt-4">
                     {[{ title: "HPHT", img: hpht, data: hphtsection }, { title: "CVD", img: cvd, data: cvdsection }].map((item) => (
                         <motion.div
                             key={item.title}
