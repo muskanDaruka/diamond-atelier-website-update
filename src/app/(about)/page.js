@@ -70,8 +70,8 @@ function Page() {
   ];
 
   return (
-    <>
-      <section className="flex flex-col xl:flex-row md:flex-row xl:justify-between md:justify-between justify-around items-center bg-black xl:pt-24 h-screen px-4">
+    <div className="bg-black">
+      <section className="flex flex-col xl:flex-row md:flex-row xl:justify-between md:justify-between justify-around items-center  xl:pt-24 h-screen px-4">
         <motion.h1
           variants={fadeIn}
           initial="hidden"
@@ -91,11 +91,10 @@ function Page() {
           <Image src={banner} alt="banner" className="object-contain max-w-sm md:max-w-lg xl:max-w-full xl:h-auto" />
         </motion.div>
       </section>
-
       {[...sections, ...policy].map((item, index) => (
         <section
         key={index}
-        className={`flex flex-col md:flex-row xl:flex-row xl:justify-evenly md:justify-evenly items-center bg-black px-4 h-screen  ${
+        className={`flex flex-col md:flex-row xl:flex-row xl:justify-evenly md:justify-evenly items-center px-4 h-screen  ${
           item.imagePosition === "left" ? "md:flex-row-reverse" : ""
         }`}
       >
@@ -128,7 +127,7 @@ function Page() {
           </motion.div>
         </section>
       ))}
-    </>
+    </div>
   );
 }
 
