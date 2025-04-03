@@ -10,9 +10,9 @@ function Labgrown() {
         { id: 1, title: "About Lab Grown Diamonds", path: "#" },
         { id: 2, title: "Difference between Mined & Lab Grown", path: "/difference" },
         { id: 3, title: "Methods of Growing Diamonds", path: "/methods" },
-        { id: 4, title: "Why Lab Grown?", path: "#" },
-        { id: 5, title: "Diamond Simulants", path: "#" },
-        { id: 6, title: "Myths & Facts", path: "#" },
+        { id: 4, title: "Why Lab Grown?", path: "/whyLab" },
+        { id: 5, title: "Diamond Simulants", path: "/simulants" },
+        { id: 6, title: "Myths & Facts", path: "/myth" },
     ];
 
     return (
@@ -22,10 +22,10 @@ function Labgrown() {
             <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full max-w-5xl gap-10">
                 <motion.div 
                     className="text-center md:text-left xl:flex-row md:w-1/2 space-y-6"
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                 >
                     <h1 className="font-semibold text-3xl uppercase text-[#d9d9d9]">
                         Great technology enables big dreams
@@ -61,7 +61,7 @@ function Labgrown() {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <Link href={item.path} className="text-black font-medium hover:underline text-xl">
+                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl">
                                 {item.title}
                             </Link>
                         </motion.div>

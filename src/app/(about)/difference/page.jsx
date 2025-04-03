@@ -1,4 +1,4 @@
-import DifferenceBetweenDiamonds from '@/components/About/DifferenceBetweenDiamonds'
+import DifferenceBetweenDiamonds from '@/components/About/Difference/DifferenceBetweenDiamonds'
 import React from 'react'
 
 function page() {

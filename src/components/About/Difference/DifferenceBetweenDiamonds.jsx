@@ -1,13 +1,14 @@
 "use client";
 import React from 'react';
-import rough from '../../../public/images/about/rough.png';
-import seed from '../../../public/images/about/seed.png';
+import rough from '../../../../public/images/about/rough.png';
+import seed from '../../../../public/images/about/seed.png';
 import Image from 'next/image';
 import { BiSolidDollarCircle } from "react-icons/bi";
 import { GiFruitTree, GiCutDiamond } from "react-icons/gi";
 import { FaShareSquare } from "react-icons/fa";
-import diamond from "../../../public/images/about/diamond.png";
+import diamond from "../../../../public/images/about/diamond.png";
 import { motion } from "framer-motion";
+import Table from '../../common/Table';
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -26,14 +27,50 @@ function DifferenceBetweenDiamonds() {
         { id: 4, icon: <FaShareSquare size={40} />, title: "FUTURE", description: "Lab-grown diamonds are positioned as the future of the diamond industry, driven by ethical, environmentally friendly characteristics, and technological advancements.", content: "They have a projected growth rate of 22% between 2021 and 2026" }
     ];
 
+    const tableData = [
+        {
+            headers: [
+                ["INDUSTRIAL ADVANTAGE", "EARTH MINED", "LAB GROWN"]
+            ],
+            rows: [
+                ["Origin Guaranteed", "No", "Yes"],
+                ["Security of Supply", "No", "Yes"],
+                ["Security of Future Growth", "No", "Yes"],
+                ["Security of Employment", "No", "Yes"],
+            ]
+        },
+        {
+            headers: [
+                ["PROPERTIES", "DIAMONDS", "SIMULANTS"],
+                ["", "EARTH MINED", "LAB GROWN", "CUBIC ZIRCONIA (CZ)", "MOISSANITE"]
+            ],
+            colSpans: {
+                colSpan: { 0: { 0: 1, 1: 2, 2: 2 } },
+            },
+            rows: [
+                ["Composition", "C", "C", "ZrO2", "SiC"],
+                ["Structure", "Cubic", "Cubic", "Cubic", "Hexagonal"],
+                ["Refractive Index", "2.42", "2.42", "2.2", "2.7"],
+                ["Dispersion", "0.44", "0.44", "0.066", "0.104"],
+                ["Hardness", "10", "10", "8.25", "9.25"],
+                ["Density", "3.52", "3.52", "5.70", "3.21"],
+                ["Thermal", "Excellent", "Excellent", "Poor", "High"],
+                ["Purity", "Only 2% are Type IIa", "Rare and Purest (100% Type IIa)", "NA", "NA"],
+                ["Measured In", "Carats", "Carats", "Carats", "Carats"],
+                ["Blue Fluorescence", "Strong to None", "None", "None", "None"],
+                ["Phosphorences", "No", "Some", "NA", "NA"],
+                ["Color", "Even", "Even", "NA", "NA"],
+            ]
+        }
+    ];
     return (
         <div>
             <section className="relative bg-black pt-24 pb-10">
                 <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                 >
                     <h1 className="uppercase font-medium font-montserrat text-white text-center xl:text-3xl md:text-2xl text-md">
                         Difference Between Earth Mined and Lab Grown Diamonds
@@ -61,7 +98,7 @@ function DifferenceBetweenDiamonds() {
             </section>
             <section className="bg-[#e9e9e9] p-6">
                 <motion.div
-                    className="flex flex-col items-center text-center h-full"
+                    className="flex flex-col items-center xl:text-left md:text-left text-center h-full"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
@@ -89,18 +126,18 @@ function DifferenceBetweenDiamonds() {
                                 </div>
                                 {item.content && (
                                     <motion.div
-                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-6 shadow-md flex-grow w-full min-h-[200px]"
+                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-6 shadow-md flex-grow w-full min-h-[100px]"
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.3 }}
-                                        variants={fadeInVariants}
+                                        variants={fadeInUp}
                                     >
                                         <p className="text-sm text-white mt-2">{item.content}</p>
                                     </motion.div>
                                 )}
                                 {item.id === 1 && (
                                     <motion.div
-                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-2 pt-14 shadow-md flex-grow w-full"
+                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-2 pt-8 shadow-md flex-grow w-full"
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.3 }}
@@ -122,6 +159,9 @@ function DifferenceBetweenDiamonds() {
                         ))}
                     </div>
                 </div>
+            </section>
+            <section className='bg-black text-white'>
+            <Table tableData={tableData} />
             </section>
         </div>
     );

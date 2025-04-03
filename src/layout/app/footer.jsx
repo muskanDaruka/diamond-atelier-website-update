@@ -40,14 +40,14 @@ function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center xl:text-left">
                 {footerList.map((section) => (
                     <div key={section.id}>
-                        <h3 className="font-semibold text-lg mb-3 text-black text-center">{section.label}</h3>
+                        <h3 className="font-semibold text-lg mb-3 text-black text-center font-montserrat">{section.label}</h3>
                         <ul className="space-y-2">
                             {section.list.map((item, index) => (
                                 <li key={index} className="text-black text-md text-center">
-                                    {item.label && <span className="font-medium text-[#777678]">{item.label}</span>}
-                                    {item.description && <p className="text-black mt-2">{item.description}</p>}
+                                    {item.label && <span className="font-medium text-[#777678] font-montserrat">{item.label}</span>}
+                                    {item.description && <p className="text-black mt-2 font-montserrat">{item.description}</p>}
                                     {item.button && (
-                                        <button className="mt-3 px-4 py-2 bg-[#2e2e2e] text-white text-sm font-medium">
+                                        <button className="mt-3 px-4 py-2 bg-[#2e2e2e] text-white text-sm font-medium font-montserrat">
                                             {item.button}
                                         </button>
                                     )}
@@ -63,7 +63,7 @@ function Footer() {
                 ))}
             </div>
 
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-6 font-montserrat">
                 <p className="text-black text-md">&copy; 2025 Diamond Atelier. All rights reserved.</p>
             </div>
         </footer>

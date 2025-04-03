@@ -41,8 +41,9 @@ function Method() {
             <section className="relative bg-black pt-24 p-4">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="uppercase font-medium font-montserrat text-white text-center xl:text-3xl md:text-2xl text-md"
                 >
                     Methods of Growing Lab Grown Diamonds
@@ -54,11 +55,10 @@ function Method() {
             </section>
             <section className="bg-[#e9e9e9] p-6">
                 <motion.p
-                    className="p-4"
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={listItemVariant}
+                    className="mt-4 text-md md:text-md xl:text-lg leading-relaxed font-montserrat text-[#6b6d6d]"
                 >
                     Creating diamonds in a lab is still a fairly new technology, but is growing in popularity. The composition is identical to that of earth-mined diamonds, but the methods in which they are derived differ greatly. There are two different methods for farming lab-grown diamonds: High Pressure High Temperature (HPHT) and Chemical Vapor Deposition (CVD). The quality is continually increasing, and to the naked eye, you won’t have a clue that you are looking at a manufactured creation.
                 </motion.p>
@@ -84,7 +84,7 @@ function Method() {
                                         initial="hidden"
                                         whileInView="visible"
                                         variants={listItemVariant}
-                                        className="mt-4 text-md md:text-md xl:text-lg leading-relaxed font-montserrat"
+                                        className="mt-4 text-md md:text-md xl:text-lg leading-relaxed font-montserrat text-[#6b6d6d]"
                                     >
                                         {desc.description}
                                     </motion.li>
