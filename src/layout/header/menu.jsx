@@ -1,17 +1,34 @@
 "use client";
 import Link from "next/link";
-import React,{useState} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MenuList from "./menu-list";
 
 function Menu({ route, scrolled }) {
   const [openMenu, setOpenMenu] = useState(null);
+  const menuRef = useRef(null);
 
   const handleToggle = (id) => {
     setOpenMenu((prev) => (prev === id ? null : id));
   };
 
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setOpenMenu(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <ul className="lg:flex flex-col lg:flex-row justify-around lg:mt-0 mt-5 xl:text-xl w-full cursor-pointer relative">
+    <ul
+      ref={menuRef}
+      className="lg:flex flex-col lg:flex-row justify-around lg:mt-0 mt-5 xl:text-xl w-full cursor-pointer relative"
+    >
       {route.map((item) => (
         <li
           key={item.id}
@@ -22,18 +39,18 @@ function Menu({ route, scrolled }) {
             className="flex justify-between items-center"
             onClick={() => item.items && handleToggle(item.id)}
           >
-          {item.path || item.href ? (
-            <Link
-              href={item.path || item.href}
-              className="transition-colors duration-300 hover:text-gray-300 font-montserrat"
-            >
-              {item.label}
-            </Link>
-          ) : (
-            <span className="font-montserrat">{item.label}</span>
-          )}
+            {item.path || item.href ? (
+              <Link
+                href={item.path || item.href}
+                className="transition-colors duration-300 hover:text-gray-300 font-montserrat"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <span className="font-montserrat">{item.label}</span>
+            )}
           </div>
-          {item.items && <MenuList list={item.items} isOpen={openMenu === item.id}/>}
+          {item.items && <MenuList list={item.items} isOpen={openMenu === item.id} />}
         </li>
       ))}
     </ul>
