@@ -161,7 +161,7 @@ function DifferenceBetweenDiamonds() {
                 </div>
             </section>
             <section className='bg-black text-white'>
-            <Table tableData={tableData} />
+                <Table tableData={tableData} className="border-separate border-spacing-y-4"/>
             </section>
         </div>
     );

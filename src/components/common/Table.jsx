@@ -7,14 +7,14 @@ const Table = ({ tableData }) => {
             {tableData.map(({ headers, rows, colSpans, title }, tableIndex) => (
                 <motion.div
                     key={tableIndex}
-                    className="overflow-x-auto max-w-full border border-[#777678]"
+                    className="overflow-x-auto max-w-full  mt-4 border border-[#777678]"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: tableIndex * 0.3 }}
                     viewport={{ once: true }}
                 >
                     <div className="w-full">
-                        <table className="min-w-max w-full border border-[#777678] text-white text-sm font-montserrat">
+                        <table className=" min-w-max w-full border border-[#777678] text-white text-sm font-montserrat">
                             <thead>
                                 {headers.map((headerRow, rowIndex) => (
                                     <tr key={rowIndex} className="bg-[#777678] text-left">
