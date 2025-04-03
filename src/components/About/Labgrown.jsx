@@ -17,9 +17,9 @@ function Labgrown() {
 
     return (
         <div 
-            className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-0 md:pt-24 pt-24"
+            className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-24 md:pt-24 pt-24"
         >
-            <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full max-w-5xl gap-10">
+            <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full  gap-10">
                 <motion.div 
                     className="text-center md:text-left xl:flex-row md:w-1/2 space-y-6"
                     initial={{ opacity: 0, y: -30 }}
@@ -27,7 +27,7 @@ function Labgrown() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <h1 className="font-semibold text-3xl uppercase text-[#d9d9d9]">
+                    <h1 className="font-semibold text-xl md:text-2xl xl:text-3xl uppercase text-[#d9d9d9]">
                         Great technology enables big dreams
                     </h1>
                     <motion.div 
@@ -41,12 +41,12 @@ function Labgrown() {
                             alt="Lab Grown Diamonds"
                             width={500}
                             height={500}
-                            className="object-contain rounded mx-auto md:mx-0"
+                            className="object-contain rounded w-full"
                         />
                     </motion.div>
                 </motion.div>
                 <motion.div 
-                    className="flex flex-col space-y-4 md:w-1/2 mt-8 md:mt-0"
+                    className="flex flex-col space-y-4 md:w-1/2 mt-8 xl:mt-0 md:mt-0"
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
