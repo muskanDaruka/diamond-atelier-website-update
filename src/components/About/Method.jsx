@@ -62,7 +62,7 @@ function Method() {
                 >
                     Creating diamonds in a lab is still a fairly new technology, but is growing in popularity. The composition is identical to that of earth-mined diamonds, but the methods in which they are derived differ greatly. There are two different methods for farming lab-grown diamonds: High Pressure High Temperature (HPHT) and Chemical Vapor Deposition (CVD). The quality is continually increasing, and to the naked eye, you won’t have a clue that you are looking at a manufactured creation.
                 </motion.p>
-                <div className="flex flex-col md:flex-row xl:flex-row justify-around items-stretch p-6 mt-4">
+                <div className="flex flex-col md:flex-row xl:flex-row justify-around items-stretch p-6 mt-4 md:gap-y-0 xl:gap-y-0 gap-y-4">
                     {[{ title: "HPHT", img: hpht, data: hphtsection }, { title: "CVD", img: cvd, data: cvdsection }].map((item) => (
                         <motion.div
                             key={item.title}
@@ -72,7 +72,7 @@ function Method() {
                             variants={fadeInUp}
                             className="bg-[#f4f4f4] m-4 p-4 rounded-lg shadow-md flex flex-col flex-1 relative pt-16"
                         >
-                            <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+                            <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 ">
                                 <Image src={item.img} alt={item.title} className="rounded-full w-32 h-32 border-4 border-[#f4f4f4] bg-white" />
                             </div>
                             <h4 className="text-[#153a66] font-semibold text-3xl uppercase text-center mt-12">{item.title}</h4>

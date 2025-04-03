@@ -71,13 +71,13 @@ function Page() {
 
   return (
     <>
-      <section className="flex flex-col xl:flex-row xl:justify-between md:justify-between justify-around items-center bg-black pt-24 h-screen px-4">
+      <section className="flex flex-col xl:flex-row md:flex-row xl:justify-between md:justify-between justify-around items-center bg-black xl:pt-24 h-screen px-4">
         <motion.h1
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
-          className="text-white font-bold text-3xl md:text-4xl xl:text-5xl text-center md:text-left xl:text-left"
+          className="text-white font-bold text-3xl md:text-4xl xl:text-5xl text-center md:text-left xl:text-left hidden lg:block"
         >
           We are Diamond Atelier
         </motion.h1>
@@ -95,7 +95,7 @@ function Page() {
       {[...sections, ...policy].map((item, index) => (
         <section
         key={index}
-        className={`flex flex-col md:flex-row xl:flex-row justify-evenly items-center bg-black px-4 h-screen  ${
+        className={`flex flex-col md:flex-row xl:flex-row xl:justify-evenly md:justify-evenly items-center bg-black px-4 h-screen  ${
           item.imagePosition === "left" ? "md:flex-row-reverse" : ""
         }`}
       >
@@ -105,7 +105,7 @@ function Page() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <Image src={item.image} alt={item.title} className="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl object-contain rounded mx-auto" />
+            <Image src={item.image} alt={item.title} className="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl object-contain rounded mx-auto" />
           </motion.div>
           <motion.div
             variants={fadeIn}
@@ -118,7 +118,7 @@ function Page() {
               {item.title}
             </h2>
             {item.subtitle && (
-              <h4 className="text-white font-medium xl:text-xl md:text-md text-sm px-4 mt-4 uppercase">
+              <h4 className="text-white font-medium xl:text-lg md:text-md text-xs px-4 mt-4 uppercase">
                 {item.subtitle}
               </h4>
             )}
