@@ -38,7 +38,7 @@ function Method() {
 
     return (
         <div>
-            <section className="relative bg-black pt-24 p-4">
+            <section className="relative bg-black pt-48 p-4">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -48,9 +48,9 @@ function Method() {
                 >
                     Methods of Growing Lab Grown Diamonds
                 </motion.h1>
-                <div className="flex justify-center items-center gap-4 p-4">
-                    <motion.button whileHover={{ scale: 1.1 }} className="bg-[#153a66] text-white px-10 py-1">HPHT</motion.button>
-                    <motion.button whileHover={{ scale: 1.1 }} className="bg-[#153a66] text-white px-10 py-1">CVD</motion.button>
+                <div className="flex justify-center items-center gap-4 p-4 font-montserrat">
+                    <motion.button whileHover={{ scale: 1.1 }} className="bg-[#777678] text-white px-10 py-1">HPHT</motion.button>
+                    <motion.button whileHover={{ scale: 1.1 }} className="bg-[#777678] text-white px-10 py-1">CVD</motion.button>
                 </div>
             </section>
             <section className="bg-[#e9e9e9] p-6">
@@ -75,7 +75,7 @@ function Method() {
                             <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 ">
                                 <Image src={item.img} alt={item.title} className="rounded-full w-32 h-32 border-4 border-[#f4f4f4] bg-white" />
                             </div>
-                            <h4 className="text-[#153a66] font-semibold text-3xl uppercase text-center mt-12">{item.title}</h4>
+                            <h4 className="text-[#777678] font-semibold text-3xl uppercase text-center mt-12">{item.title}</h4>
                             <ul className="list-disc pl-5 text-[#333] flex-1">
                                 {item.data.map((desc, i) => (
                                     <motion.li

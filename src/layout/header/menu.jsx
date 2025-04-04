@@ -27,7 +27,7 @@ function Menu({ route, scrolled }) {
   return (
     <ul
       ref={menuRef}
-      className="lg:flex flex-col lg:flex-row justify-around lg:mt-0 mt-5 xl:text-xl w-full cursor-pointer relative"
+      className="lg:flex flex-col lg:flex-row xl:justify-around md:justify-around justify-center lg:mt-0 mt-5 xl:text-xl gap-8 cursor-pointer "
     >
       {route.map((item) => (
         <li

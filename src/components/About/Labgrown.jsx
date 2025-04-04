@@ -17,7 +17,7 @@ function Labgrown() {
 
     return (
         <div 
-            className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-24 md:pt-24 pt-24"
+            className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-48 md:pt-48 pt-24"
         >
             <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full  gap-10">
                 <motion.div 
@@ -27,7 +27,7 @@ function Labgrown() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <h1 className="font-semibold text-xl md:text-2xl xl:text-3xl uppercase text-[#d9d9d9]">
+                    <h1 className="font-semibold text-xl md:text-2xl xl:text-4xl uppercase text-[#d9d9d9] font-montserrat">
                         Great technology enables big dreams
                     </h1>
                     <motion.div 
@@ -55,13 +55,13 @@ function Labgrown() {
                     {list.map((item, index) => (
                         <motion.div 
                             key={item.id} 
-                            className="bg-[#d9d9d9] p-4 shadow-md"
+                            className="bg-[#d9d9d9] xl:m-5 xl:p-5 p-4 shadow-md"
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl">
+                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl font-montserrat">
                                 {item.title}
                             </Link>
                         </motion.div>

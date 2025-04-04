@@ -31,7 +31,7 @@ function Myths() {
 
     return (
         <div>
-            <section className="relative bg-black pt-24">
+            <section className="relative bg-black pt-48">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}

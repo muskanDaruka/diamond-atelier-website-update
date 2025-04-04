@@ -48,7 +48,7 @@ function Simulants() {
 
     return (
         <div>
-            <section className="relative bg-black pt-24 pb-10">
+            <section className="relative bg-black pt-48 pb-10">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ function Simulants() {
                 >
                     A diamond simulant is a manufactured stone that is meant to mimic the appearance of a diamond. Simulants are made using a wide variety of materials, so they are not chemically identical to mined diamonds. This means that they will not have the same durability, brilliance, or color of a traditional diamond.
                 </motion.p>
-                <div className='bg-[#153a66] text-white m-8 ml-0 mr-0 p-1 rounded-full'>
+                <div className='bg-[#6b6d69] text-white m-8 ml-0 mr-0 p-1 rounded-full'>
                     <motion.h3
                         initial={{ opacity: 0, y: -30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -100,12 +100,12 @@ function Simulants() {
 
                     <div className="grid place-items-center">
                         <Image src={cubic} className="w-auto h-auto" alt="cubic" />
-                        <p className="text-[#6b6d6d] text-center mt-2">Cubic Zirconia</p>
+                        <p className="text-[#6b6d6d] text-center mt-2 font-montserrat">Cubic Zirconia</p>
                     </div>
 
                     <div className="grid place-items-center">
                         <Image src={cubic2} className="w-auto h-auto" alt="moissanite" />
-                        <p className="text-[#6b6d6d] text-center mt-2">Moissanite</p>
+                        <p className="text-[#6b6d6d] text-center mt-2 font-montserrat">Moissanite</p>
                     </div>
                 </div>
 

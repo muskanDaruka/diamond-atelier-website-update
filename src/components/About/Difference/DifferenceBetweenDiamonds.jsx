@@ -65,7 +65,7 @@ function DifferenceBetweenDiamonds() {
     ];
     return (
         <div>
-            <section className="relative bg-black pt-24 pb-10">
+            <section className="relative bg-black pt-48 pb-10">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -82,14 +82,14 @@ function DifferenceBetweenDiamonds() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <div className='flex xl:flex-row md:flex-row flex-col justify-center items-center'>
+                    <div className='flex xl:flex-row md:flex-row flex-col justify-center items-center font-montserrat'>
 
                         <div className="gap-4 pt-2">
-                            <button className="bg-[#153a66] uppercase text-white px-11 py-1 ml-3">Rough Stone</button>
-                            <Image src={rough} alt="diamonds" width={200} className="object-contain px-10 py-5 ms-3 mr-4 bg-white" />
+                            <button className="bg-[#777678] uppercase text-white px-9.5 py-1 ml-3">Rough Stone</button>
+                            <Image src={rough} alt="diamonds" width={200} className="object-contain px-10 py-5 ms-3 mr-5 bg-white" />
                         </div>
                         <div className="xl:pt-1 pt-4">
-                            <button className="bg-[#153a66] uppercase text-white px-10 py-1">Diamond Seed</button>
+                            <button className="bg-[#777678] uppercase text-white px-8.5 py-1">Diamond Seed</button>
                             <Image src={seed} alt="diamonds" width={200} className="object-contain px-10 py-6.5 xl:mr-5 md:mr-5 bg-white " />
                         </div>
 
@@ -104,7 +104,7 @@ function DifferenceBetweenDiamonds() {
                     viewport={{ once: false, amount: 0.3 }}
                     variants={fadeInVariants}
                 >
-                    <p className="text-[#6b6d6d] md:text-md text-sm xl:text-xl">
+                    <p className="text-[#6b6d6d] md:text-md text-sm xl:text-xl font-montserrat">
                         The only difference between a lab-created diamond and a mined diamond is their origin. A lab-grown diamond is created in a lab using extraordinary technology that replicates the natural diamond formation process. The result is a man-made diamond with identical physical, chemical, and optical properties to a mined diamond.
                     </p>
                 </motion.div>
@@ -119,14 +119,14 @@ function DifferenceBetweenDiamonds() {
                                 viewport={{ once: false, amount: 0.3 }}
                                 variants={fadeInVariants}
                             >
-                                <div className="p-4 bg-white rounded-full mb-4">{item.icon}</div>
+                                <div className="p-4 bg-white rounded-full mb-4 text-[#777678]">{item.icon}</div>
                                 <h3 className="text-2xl font-medium">{item.title}</h3>
                                 <div className="flex flex-col items-center text-center bg-white p-6 shadow-md mt-4 flex-grow w-full min-h-[200px]">
                                     <p className="text-sm text-gray-600 mt-2">{item.description}</p>
                                 </div>
                                 {item.content && (
                                     <motion.div
-                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-6 shadow-md flex-grow w-full min-h-[100px]"
+                                        className="flex flex-col items-center text-center bg-[#777678] text-white p-6 shadow-md flex-grow w-full min-h-[100px]"
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.3 }}
@@ -137,7 +137,7 @@ function DifferenceBetweenDiamonds() {
                                 )}
                                 {item.id === 1 && (
                                     <motion.div
-                                        className="flex flex-col items-center text-center bg-[#153a66] text-white p-2 pt-8 shadow-md flex-grow w-full"
+                                        className="flex flex-col items-center text-center bg-[#777678] text-white p-2 pt-8 shadow-md flex-grow w-full"
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.3 }}
