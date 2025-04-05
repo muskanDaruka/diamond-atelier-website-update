@@ -109,7 +109,7 @@ function Page() {
 
   return (
     <div className="bg-black xl:pt-6 md:pt-18 pt-8">
-      <div className="relative w-full h-[60vh] md:h-[90vh] xl:h-screen overflow-hidden">
+      <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-32">
         <video
           className="absolute inset-0 w-full h-full object-cover opacity-80"
           autoPlay
@@ -126,7 +126,7 @@ function Page() {
       {sections.map((item, index) => (
         <section
           key={index}
-          className={`flex flex-col md:flex-row xl:flex-row xl:justify-around md:justify-around justify-center items-center px-4 h-screen  ${item.imagePosition === "left" ? "xl:flex-row-reverse md:flex-row-reverse" : ""
+          className={`flex flex-col md:flex-row xl:flex-row xl:justify-around md:justify-around justify-center items-center px-4 h-screen ${item.imagePosition === "left" ? "xl:flex-row-reverse md:flex-row-reverse" : ""
             }`}
         >
           <motion.div
