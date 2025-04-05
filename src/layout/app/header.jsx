@@ -38,7 +38,13 @@ function Header() {
       ],
     },
     { id: 3, label: "SHAPES", path: "#", },
-    { id: 4, label: "EDUCATION", path: "#", },
+    { id: 4, label: "EDUCATION", path: "/education", 
+      items: [
+        { label: "EVOLUTION", path: "#" },
+        { label: "THE 4CS", path: "#" },
+        { label: "ANATOMY", path: "#" },
+      ]
+    },
     { id: 5, label: "CONTACT US", path: "#" },
   ];
 

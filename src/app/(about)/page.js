@@ -165,7 +165,7 @@ function Page() {
             className="flex flex-col items-center text-center h-full"
           >
             <h2
-              className="text-white font-bold uppercase px-4 xl:text-4xl md:text-2xl text-xl font-montserrat"
+              className="text-white font-bold uppercase px-4 xl:text-3xl md:text-2xl text-xl font-montserrat"
               data-aos="fade-down"
             >
               {item.title}
