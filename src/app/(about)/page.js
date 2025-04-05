@@ -158,7 +158,7 @@ function Page() {
           </motion.div>
         </section>
       ))}
-      <div className="grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-4 gap-6 p-4">
+      <div className="grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-4 xl:gap-6 md:gap-6 gap-32 p-6">
         {policy.map((item, index) => (
           <section
             key={index}
