@@ -70,7 +70,7 @@ function Method() {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={fadeInUp}
-                            className="bg-[#f4f4f4] m-4 p-4 rounded-lg shadow-md flex flex-col flex-1 relative pt-16"
+                            className="bg-[#f4f4f4] xl:m-4 md:m-4 p-4 md:mt-4 md:mt-4 mt-10 rounded-lg shadow-md flex flex-col flex-1 relative pt-16"
                         >
                             <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2 ">
                                 <Image src={item.img} alt={item.title} className="rounded-full w-32 h-32 border-4 border-[#f4f4f4] bg-white" />
