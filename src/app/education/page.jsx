@@ -28,13 +28,13 @@ const page = () => {
         {list.map((item, index) => (
                         <motion.div 
                             key={item.id} 
-                            className="bg-[#d9d9d9] xl:m-5 xl:p-5 p-4 shadow-md"
+                            className="bg-transparent xl:m-5 xl:p-5 p-4 shadow-md border border-[#6b6d6d] text-cente"
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl font-montserrat">
+                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl font-montserrat r">
                                 {item.title}
                             </Link>
                         </motion.div>

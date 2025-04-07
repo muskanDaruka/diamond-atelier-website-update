@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import img from '../../../public/images/about/img.png';
+import background from '../../../public/images/education/background.png'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -16,46 +17,71 @@ function Labgrown() {
     ];
 
     return (
-        <div 
-            className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-48 md:pt-48 pt-24"
-        >
-            <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full  gap-10">
-                <motion.div 
-                    className="text-center md:text-left xl:flex-row md:w-1/2 space-y-6"
-                    initial={{ opacity: 0, y: -30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: false, amount: 0.2 }}
-                >
-                    <h1 className="font-semibold text-xl md:text-2xl xl:text-4xl uppercase text-[#d9d9d9] font-montserrat">
-                        Great technology enables big dreams
-                    </h1>
-                    <motion.div 
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
-                        <Image
-                            src={img}
-                            alt="Lab Grown Diamonds"
-                            width={500}
-                            height={500}
-                            className="object-contain rounded w-full"
-                        />
-                    </motion.div>
-                </motion.div>
-                <motion.div 
-                    className="flex flex-col space-y-4 md:w-1/2 mt-8 xl:mt-0 md:mt-0"
-                    initial={{ x: 100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                >
-                    {list.map((item, index) => (
+        // <div 
+        //     className="bg-black min-h-screen flex items-center justify-center px-6 py-12 xl:pt-48 md:pt-48 pt-24"
+        // >
+        //     <section className="flex flex-col md:flex-row xl:flex-row items-center justify-between w-full  gap-10">
+        //         <motion.div 
+        //             className="text-center md:text-left xl:flex-row md:w-1/2 space-y-6"
+        //             initial={{ opacity: 0, y: -30 }}
+        //             whileInView={{ opacity: 1, y: 0 }}
+        //             transition={{ duration: 0.8 }}
+        //             viewport={{ once: false, amount: 0.2 }}
+        //         >
+        //             <h1 className="font-semibold text-xl md:text-2xl xl:text-4xl uppercase text-[#d9d9d9] font-montserrat">
+        //                 Great technology enables big dreams
+        //             </h1>
+        //             <motion.div 
+        //                 initial={{ scale: 0.8, opacity: 0 }}
+        //                 whileInView={{ scale: 1, opacity: 1 }}
+        //                 transition={{ duration: 0.8 }}
+        //                 viewport={{ once: true }}
+        //             >
+        //                 <Image
+        //                     src={img}
+        //                     alt="Lab Grown Diamonds"
+        //                     width={500}
+        //                     height={500}
+        //                     className="object-contain rounded w-full"
+        //                 />
+        //             </motion.div>
+        //         </motion.div>
+        //         <motion.div 
+        //             className="flex flex-col space-y-4 md:w-1/2 mt-8 xl:mt-0 md:mt-0"
+        //             initial={{ x: 100, opacity: 0 }}
+        //             whileInView={{ x: 0, opacity: 1 }}
+        //             transition={{ duration: 0.8 }}
+        //             viewport={{ once: true }}
+        //         >
+        //             {list.map((item, index) => (
+        //                 <motion.div 
+        //                     key={item.id} 
+        //                     className="bg-[#d9d9d9] xl:m-5 xl:p-5 p-4 shadow-md"
+        //                     initial={{ y: 20, opacity: 0 }}
+        //                     whileInView={{ y: 0, opacity: 1 }}
+        //                     transition={{ duration: 0.6, delay: index * 0.1 }}
+        //                     viewport={{ once: true }}
+        //                 >
+        //                     <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl font-montserrat">
+        //                         {item.title}
+        //                     </Link>
+        //                 </motion.div>
+        //             ))}
+        //         </motion.div>
+        //     </section>
+        // </div>
+        <div>
+      <section className="relative pt-36 flex justify-center items-center">
+        <Image
+          src={background}
+          alt="background-img"
+          className="w-full h-auto object-cover"
+        />
+        <div className="absolute top-48 grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-4 xl:px-10 p-8">
+        {list.map((item, index) => (
                         <motion.div 
                             key={item.id} 
-                            className="bg-[#d9d9d9] xl:m-5 xl:p-5 p-4 shadow-md"
+                            className="bg-transparent xl:m-5 xl:p-5 p-4 shadow-md border border-[#6b6d6d] text-center"
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -66,9 +92,9 @@ function Labgrown() {
                             </Link>
                         </motion.div>
                     ))}
-                </motion.div>
-            </section>
         </div>
+      </section>
+    </div>
     );
 }
 
