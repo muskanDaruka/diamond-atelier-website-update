@@ -1,14 +1,18 @@
 "use client";
 import React from 'react';
-import rough from '../../../../public/images/about/rough.png';
-import seed from '../../../../public/images/about/seed.png';
+import rough from '../../../public/images/about/rough.png';
+import seed from '../../../public/images/about/seed.png';
 import Image from 'next/image';
 import { BiSolidDollarCircle } from "react-icons/bi";
 import { GiFruitTree, GiCutDiamond } from "react-icons/gi";
 import { FaShareSquare } from "react-icons/fa";
-import diamond from "../../../../public/images/about/diamond.png";
+import diamond from "../../../public/images/about/diamond.png";
 import { motion } from "framer-motion";
-import Table from '../../common/Table';
+import Table from '../common/Table';
+import price from '../../../public/images/about/Difference - Lab Grown-Price-.png'
+import tree from '../../../public/images/about/Difference - Lab Grown-Sustainability-.png'
+import value from '../../../public/images/about/Difference - Lab Grown-Value-.png'
+import future from '../../../public/images/about/FutureIcon.png'
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -21,10 +25,10 @@ const fadeInUp = {
 
 function DifferenceBetweenDiamonds() {
     const commitmentList = [
-        { id: 1, icon: <BiSolidDollarCircle size={40} />, title: "PRICE", description: "A Lab Grown diamond of the same grade (according to the 4C’s) will be priced about 8% - 12% of natural diamonds with the same carat, cut, color, and clarity.", img: diamond },
-        { id: 2, icon: <GiFruitTree size={40} />, title: "VALUE", description: "Initially, when Lab Grown diamonds came to the market, no one took it seriously. But, as they say, change is the law of nature. Lab Grown diamonds became evident in the market and even the most sophisticated gem laboratories certified them as diamonds.", content: "Does it fade or get cloudy over time? No! It stays forever just like a mined diamond." },
-        { id: 3, icon: <GiCutDiamond size={40} />, title: "SUSTAINABILITY", description: "We have a duty to care for the environment. Lab grown diamonds do not involve any excavation or dispersion of natural resources. The future is lab-grown diamonds.", content: "For every carat of diamond that is mined, nearly 100 sq ft of land is disturbed and almost 6000 lbs of mineral waste is created." },
-        { id: 4, icon: <FaShareSquare size={40} />, title: "FUTURE", description: "Lab-grown diamonds are positioned as the future of the diamond industry, driven by ethical, environmentally friendly characteristics, and technological advancements.", content: "They have a projected growth rate of 22% between 2021 and 2026" }
+        { id: 1, icon: <Image src={price} alt="Price Icon" width={120} height={60} />, title: "PRICE", description: "A Lab Grown diamond of the same grade (according to the 4C’s) will be priced about 8% - 12% of natural diamonds with the same carat, cut, color, and clarity.", img: diamond },
+        { id: 2, icon: <Image src={tree} alt="Price Icon" width={120} height={60} />, title: "VALUE", description: "Initially, when Lab Grown diamonds came to the market, no one took it seriously. But, as they say, change is the law of nature. Lab Grown diamonds became evident in the market and even the most sophisticated gem laboratories certified them as diamonds.", content: "Does it fade or get cloudy over time? No! It stays forever just like a mined diamond." },
+        { id: 3, icon: <Image src={value} alt="Price Icon" width={120} height={60} />, title: "SUSTAINABILITY", description: "We have a duty to care for the environment. Lab grown diamonds do not involve any excavation or dispersion of natural resources. The future is lab-grown diamonds.", content: "For every carat of diamond that is mined, nearly 100 sq ft of land is disturbed and almost 6000 lbs of mineral waste is created." },
+        { id: 4, icon: <Image src={future} alt="Price Icon" width={120} height={60} />, title: "FUTURE", description: "Lab-grown diamonds are positioned as the future of the diamond industry, driven by ethical, environmentally friendly characteristics, and technological advancements.", content: "They have a projected growth rate of 22% between 2021 and 2026" }
     ];
 
     const tableData = [
@@ -65,7 +69,7 @@ function DifferenceBetweenDiamonds() {
     ];
     return (
         <div>
-            <section className="relative bg-black pt-48 pb-10">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 pb-10">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +123,7 @@ function DifferenceBetweenDiamonds() {
                                 viewport={{ once: false, amount: 0.3 }}
                                 variants={fadeInVariants}
                             >
-                                <div className="p-4 bg-white rounded-full mb-4 text-[#777678]">{item.icon}</div>
+                                <div className="bg-white rounded-full mb-4 text-[#777678]">{item.icon}</div>
                                 <h3 className="text-2xl font-medium">{item.title}</h3>
                                 <div className="flex flex-col items-center text-center bg-white p-6 shadow-md mt-4 flex-grow w-full min-h-[200px]">
                                     <p className="text-sm text-gray-600 mt-2">{item.description}</p>
