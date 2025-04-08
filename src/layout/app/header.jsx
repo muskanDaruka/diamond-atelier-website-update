@@ -37,7 +37,7 @@ function Header() {
         { label: "MYTHS & FACTS", path: "/myth" },
       ],
     },
-    { id: 3, label: "SHAPES", path: "#", },
+    { id: 3, label: "SHAPES", path: "/shapes", },
     { id: 4, label: "EDUCATION", path: "/education", 
       items: [
         { label: "EVOLUTION", path: "#" },
