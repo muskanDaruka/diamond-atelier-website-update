@@ -59,7 +59,7 @@ function Header() {
             className="cursor-pointer transition-colors duration-300"
             onClick={() => router.push("/")}
           >
-            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" />
+            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert"/>
           </div>
         </div>
         <div className="hidden lg:block">

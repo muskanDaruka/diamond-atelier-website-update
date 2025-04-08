@@ -123,7 +123,7 @@ function DifferenceBetweenDiamonds() {
                                 viewport={{ once: false, amount: 0.3 }}
                                 variants={fadeInVariants}
                             >
-                                <div className="bg-white rounded-full mb-4 text-[#777678]">{item.icon}</div>
+                                <div className="p-3 bg-white rounded-full mb-4 text-[#777678]">{item.icon}</div>
                                 <h3 className="text-2xl font-medium">{item.title}</h3>
                                 <div className="flex flex-col items-center text-center bg-white p-6 shadow-md mt-4 flex-grow w-full min-h-[200px]">
                                     <p className="text-sm text-gray-600 mt-2">{item.description}</p>

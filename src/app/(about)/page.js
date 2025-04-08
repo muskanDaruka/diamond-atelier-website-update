@@ -135,7 +135,7 @@ function Page() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <Image src={item.image} alt={item.title} className="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl object-contain rounded mx-auto" data-aos="zoom-in-up" />
+            <Image src={item.image} alt={item.title} className="w-full h-auto max-w-xl md:max-w-md lg:max-w-lg xl:min-w-2xl object-contain rounded mx-auto" data-aos="zoom-in-up" />
           </motion.div>
           <motion.div
             variants={fadeIn}
