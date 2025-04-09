@@ -36,48 +36,54 @@ function Page() {
       title: "10,000+ certified stones",
       subtitle: "Readily available in stock",
       description:
-        "We excel in crafting unique shapes diamonds. Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
-      image: certified,
+        "We are Grower & Manufacturer of lab grown diamonds. With our wide range having thousands of diamonds, you get one trusted source to fulfill your demand and save your time and energy.",
+      type: "image",
+      media: certified,
       imagePosition: "left",
     },
     {
       title: "100+ shapes",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "We have fine artisans on board to create diamonds of any shape imaginable. We have readily available stock & can deliver special make-to- order, within 30 days.",
-      image: horse,
+        "Our artisan workshop offers 100+ diamond shapes, crafted with elegance and precision. We also create custom shapes tailored to your vision within 30 days.",
+      type: "video",
+      media: "/images/about/Shapes video.mp4",
       imagePosition: "right",
     },
     {
       title: "30+ colors",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "We excel in crafting unique shapes diamonds . Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
-      image: stone,
+        "We specialize in unique colored diamonds across 10+ fancy shades, with customized color delivery guaranteed within 20 days.",
+      type: "video",
+      media: "/images/about/Fancy Color video.mp4",
       imagePosition: "left",
     },
     {
       title: "Matching layout",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Calibrated in 0.10 MM of variation. 10,000 CTS + stock available in New York. 250+ sizes. 10 Fancy Shapes",
-      image: matching,
+        "Our comprehensive collection of calibrated matching layouts ranges from 10 to 99 cents, with a 0.10 MM tolerance. Whether you seek uniformity in shapes, colors, clarities, dimensions, or cent values, trust us to deliver precisely what you need.",
+      type: "video",
+      media: "/images/about/Matching Layout video.mp4",
       imagePosition: "right",
     },
     {
       title: "Star melee",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "We excel in crafting unique shapes diamonds. Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
-      image: melee,
+        "We have finest small-sized lab-grown diamonds. -2 (0.006 to 0.008 carats) Star ranging from (0.009 to 0.021), Melee  (0.021 to 0.074 carats)",
+      type: "image",
+      media: melee,
       imagePosition: "left",
     },
     {
       title: "JEWELLERY",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "We excel in crafting unique shapes diamonds . Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
-      image: jewellery,
+        "We are proud to introduce our new timeless  range of lab-grown diamond jewelry - featuring rings, bracelets, necklaces, and earrings.",
+      type: "video",
+      media: "/images/about/Jewelry - DA video.mp4",
       imagePosition: "right",
     },
   ];
@@ -135,7 +141,27 @@ function Page() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <Image src={item.image} alt={item.title} className="w-full h-auto max-w-xl md:max-w-md lg:max-w-lg xl:min-w-2xl object-contain rounded mx-auto" data-aos="zoom-in-up" />
+            {item.type === "image" ? (
+              <Image
+                src={item.media}
+                alt={item.title}
+                width={400}
+                height={100}
+                className="w-full h-auto max-w-xl md:max-w-md lg:max-w-lg xl:min-w-2xl object-contain rounded mx-auto"
+                data-aos="zoom-in-up"
+              />
+             ) : ( 
+                <video
+                src={item.media}
+                controls
+                muted
+                autoPlay
+                loop
+                playsInline
+                className="w-full h-auto max-w-[290px] md:max-w-md lg:max-w-lg xl:min-w-2xl inset-0 rounded mx-auto object-cover"
+                data-aos="zoom-in-up"
+              />
+            )}
           </motion.div>
           <div
             className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 xl:mt-0"

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { IoClose, IoReorderThree } from "react-icons/io5";
 import { useRouter } from "next/navigation";
-import logo from '../../../public/images/logo/diamondatelierlogo.jpg'
+import logo from '../../../public/images/logo/diamondatelierlogo-new.jpg'
 import Menu from "../header/menu";
 import Image from "next/image";
 
@@ -70,12 +70,13 @@ function Header() {
       <div className="hidden lg:block">
         <div className="flex justify-center items-center gap-4 p-2">
           <div
-            className="cursor-pointer transition-colors duration-300"
+            className="uppercase cursor-pointer transition-colors duration-300 text-white text-5xl font-ebgaramond pb-1 border-b border-[#6b6d6d]"
             onClick={() => router.push("/")}
           >
             <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" style={{width:"550px"}} />
           </div>
         </div>
+        {/* <hr/> */}
         <div className="hidden lg:block">
           <Menu route={route} scrolled={scrolled} />
         </div>
