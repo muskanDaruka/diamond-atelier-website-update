@@ -137,25 +137,21 @@ function Page() {
           >
             <Image src={item.image} alt={item.title} className="w-full h-auto max-w-xl md:max-w-md lg:max-w-lg xl:min-w-2xl object-contain rounded mx-auto" data-aos="zoom-in-up" />
           </motion.div>
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+          <div
             className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 xl:mt-0"
           >
-            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-montserrat">
+            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="4000">
               {item.title}
             </h2>
             {item.subtitle && (
-              <h4 className="text-white font-medium xl:text-lg md:text-md text-xs px-4 mt-4 uppercase font-montserrat">
+              <h4 className="text-white font-medium xl:text-lg md:text-md text-xs px-4 mt-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="4000">
                 {item.subtitle}
               </h4>
             )}
-            <p className="text-[#d9d9d9] font-normal xl:text-xl md:text-md text-sm px-4 mt-4 leading-extended font-montserrat">
+            <p className="text-[#d9d9d9] font-normal xl:text-xl md:text-md text-sm px-4 mt-4 leading-extended font-montserrat" data-aos="fade-up" data-aos-duration="3000">
               {item.description}
             </p>
-          </motion.div>
+          </div>
         </section>
       ))}
       <div className="grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-4 xl:gap-6 md:gap-6 gap-32 p-6">

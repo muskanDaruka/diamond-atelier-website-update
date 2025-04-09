@@ -96,11 +96,11 @@ function Page() {
     ]
 
     return (
-        <div className="bg-black py-8 xl:pt-48 md:pt-18 pt-8">
+        <div className="bg-black py-8 xl:pt-64 md:pt-64 pt-22">
             <h2 className="text-white text-center font-bold font-montserrat xl:text-4xl md:text-2xl text-md pb-6">
                 DIAMOND SHAPES WE OFFER!
             </h2>
-            <h3 className="bg-[#d9d9d9] text-center font-medium font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
+            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
                 BASIC SHAPES
             </h3>
             <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">
@@ -113,7 +113,7 @@ function Page() {
                     </div>
                 ))}
             </div>
-            <h3 className="bg-[#d9d9d9] text-center font-medium font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                 SIDE STONE SHAPES
             </h3>
             <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">
@@ -126,7 +126,7 @@ function Page() {
                     </div>
                 ))}
             </div>
-            <h3 className="bg-[#d9d9d9] text-center font-medium font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                 EXOTIC SHAPES
             </h3>
             <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">

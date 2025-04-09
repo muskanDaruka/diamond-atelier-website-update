@@ -38,7 +38,8 @@ function Header() {
       ],
     },
     { id: 3, label: "SHAPES", path: "/shapes", },
-    { id: 4, label: "EDUCATION", path: "/education", 
+    {
+      id: 4, label: "EDUCATION", path: "/education",
       items: [
         { label: "EVOLUTION", path: "#" },
         { label: "THE 4CS", path: "#" },
@@ -59,7 +60,7 @@ function Header() {
             className="cursor-pointer transition-colors duration-300"
             onClick={() => router.push("/")}
           >
-            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert"/>
+            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" />
           </div>
         </div>
         <div className="hidden lg:block">
@@ -67,18 +68,18 @@ function Header() {
         </div>
       </div>
       <div className="hidden lg:block">
-      <div className="flex justify-center items-center gap-4 p-2">
+        <div className="flex justify-center items-center gap-4 p-2">
           <div
             className="cursor-pointer transition-colors duration-300"
             onClick={() => router.push("/")}
           >
-            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" />
+            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" style={{width:"550px"}} />
           </div>
         </div>
         <div className="hidden lg:block">
           <Menu route={route} scrolled={scrolled} />
         </div>
-        </div>
+      </div>
       {open && (
         <div className="absolute w-full bg-black shadow-md lg:hidden p-4">
           <Menu route={route} scrolled={true} />
