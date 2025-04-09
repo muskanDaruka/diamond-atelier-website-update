@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image'
 import React from 'react'
 import round from '../../../public/images/Shapes/round.png'
@@ -42,8 +43,29 @@ import tbaguette from '../../../public/images/Shapes/tbaguette.png'
 import bullet from '../../../public/images/Shapes/bullet.png'
 import halfmoon from '../../../public/images/Shapes/half-moon.png'
 import cadillac from '../../../public/images/Shapes/cadillac.png'
+import { motion } from "framer-motion";
 
 function Page() {
+
+    const fadeRight = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2, 
+            },
+        },
+    };
+
+    const childVariant = {
+        hidden: { opacity: 0, x: -50 },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.6 }, 
+        },
+    };
+
     const shapes = [
         { id: 1, img: round, alt: "round", title: "Round" },
         { id: 2, img: oval, alt: "oval", title: "Oval" },
@@ -103,42 +125,72 @@ function Page() {
             <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
                 BASIC SHAPES
             </h3>
-            <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">
+            <motion.div
+                variants={fadeRight}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+            >
                 {shapes.map((item) => (
-                    <div className="text-center" key={item.id}>
+                    <motion.div
+                        variants={childVariant}
+                        className="text-center"
+                        key={item.id}
+                    >
                         <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
                         <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                             {item.title}
                         </span>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
             <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                 SIDE STONE SHAPES
             </h3>
-            <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">
+            <motion.div
+                variants={fadeRight}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+            >
                 {sideStone.map((item) => (
-                    <div className="text-center" key={item.id}>
+                    <motion.div
+                        variants={childVariant}
+                        className="text-center"
+                        key={item.id}
+                    >
                         <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
                         <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                             {item.title}
                         </span>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
             <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                 EXOTIC SHAPES
             </h3>
-            <div className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4">
+            <motion.div
+                variants={fadeRight}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+            >
                 {exoticShapes.map((item) => (
-                    <div className="text-center" key={item.id}>
+                    <motion.div
+                        variants={childVariant}
+                        className="text-center"
+                        key={item.id}
+                    >
                         <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
                         <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                             {item.title}
                         </span>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
 
     )

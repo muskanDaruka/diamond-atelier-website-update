@@ -44,7 +44,7 @@ function Page() {
       title: "100+ shapes",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Our extensive range of calibrated matching layouts starts from 10 cents to 99 cents, in 0.10 MM of tolerance. Whether your requirement includes identical shapes, colors, clarities, MM or cent values, count on us to provide precisely what you're looking for.",
+        "We have fine artisans on board to create diamonds of any shape imaginable. We have readily available stock & can deliver special make-to- order, within 30 days.",
       image: horse,
       imagePosition: "right",
     },
@@ -52,7 +52,7 @@ function Page() {
       title: "30+ colors",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Our extensive range of calibrated matching layouts starts from 10 cents to 99 cents, in 0.10 MM of tolerance. Whether your requirement includes identical shapes, colors, clarities, MM or cent values, count on us to provide precisely what you're looking for.",
+        "We excel in crafting unique shapes diamonds . Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
       image: stone,
       imagePosition: "left",
     },
@@ -60,7 +60,7 @@ function Page() {
       title: "Matching layout",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Our extensive range of calibrated matching layouts starts from 10 cents to 99 cents, in 0.10 MM of tolerance. Whether your requirement includes identical shapes, colors, clarities, MM or cent values, count on us to provide precisely what you're looking for.",
+        "Calibrated in 0.10 MM of variation. 10,000 CTS + stock available in New York. 250+ sizes. 10 Fancy Shapes",
       image: matching,
       imagePosition: "right",
     },
@@ -68,7 +68,7 @@ function Page() {
       title: "Star melee",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Our extensive range of calibrated matching layouts starts from 10 cents to 99 cents, in 0.10 MM of tolerance. Whether your requirement includes identical shapes, colors, clarities, MM or cent values, count on us to provide precisely what you're looking for.",
+        "We excel in crafting unique shapes diamonds. Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
       image: melee,
       imagePosition: "left",
     },
@@ -76,7 +76,7 @@ function Page() {
       title: "JEWELLERY",
       subtitle: "Diamonds over 100+ shapes",
       description:
-        "Our extensive range of calibrated matching layouts starts from 10 cents to 99 cents, in 0.10 MM of tolerance. Whether your requirement includes identical shapes, colors, clarities, MM or cent values, count on us to provide precisely what you're looking for.",
+        "We excel in crafting unique shapes diamonds . Our built-in inventory ensures a customized color delivery within just 20 days, offering unparalleled convenience.",
       image: jewellery,
       imagePosition: "right",
     },
@@ -140,11 +140,11 @@ function Page() {
           <div
             className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 xl:mt-0"
           >
-            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="4000">
+            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="5000">
               {item.title}
             </h2>
             {item.subtitle && (
-              <h4 className="text-white font-medium xl:text-lg md:text-md text-xs px-4 mt-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="4000">
+              <h4 className="text-white font-medium xl:text-lg md:text-md text-xs px-4 mt-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="3000">
                 {item.subtitle}
               </h4>
             )}
