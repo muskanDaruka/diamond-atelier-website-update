@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { IoClose, IoReorderThree } from "react-icons/io5";
 import { useRouter } from "next/navigation";
-import logo from '../../../public/images/logo/diamondatelierlogo-new.jpg'
+import logo from '../../../public/images/logo/Diamond Atelier.png'
 import Menu from "../header/menu";
 import Image from "next/image";
 
