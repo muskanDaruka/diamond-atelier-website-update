@@ -150,10 +150,9 @@ function Page() {
                 className="w-full h-auto max-w-xl md:max-w-md lg:max-w-lg xl:min-w-2xl object-contain rounded mx-auto"
                 data-aos="zoom-in-up"
               />
-             ) : ( 
-                <video
+            ) : (
+              <video
                 src={item.media}
-                controls
                 muted
                 autoPlay
                 loop
