@@ -60,7 +60,7 @@ function Header() {
             className="cursor-pointer transition-colors duration-300"
             onClick={() => router.push("/")}
           >
-            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" />
+            <Image src={logo} alt="DIAMOND ATELIER" className="invert" />
           </div>
         </div>
         <div className="hidden lg:block">
@@ -73,7 +73,7 @@ function Header() {
             className="uppercase cursor-pointer transition-colors duration-300 text-white text-5xl font-ebgaramond pb-1 border-b border-[#6b6d6d]"
             onClick={() => router.push("/")}
           >
-            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" style={{width:"550px"}} />
+            <Image src={logo} width={350} height={60} alt="DIAMOND ATELIER" className="invert" style={{width:"500px"}} />
           </div>
         </div>
         {/* <hr/> */}
