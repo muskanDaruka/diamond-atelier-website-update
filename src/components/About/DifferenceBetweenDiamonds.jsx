@@ -3,9 +3,6 @@ import React from 'react';
 import rough from '../../../public/images/about/rough.png';
 import seed from '../../../public/images/about/seed.png';
 import Image from 'next/image';
-import { BiSolidDollarCircle } from "react-icons/bi";
-import { GiFruitTree, GiCutDiamond } from "react-icons/gi";
-import { FaShareSquare } from "react-icons/fa";
 import diamond from "../../../public/images/about/diamond.png";
 import { motion } from "framer-motion";
 import Table from '../common/Table';
@@ -69,7 +66,7 @@ function DifferenceBetweenDiamonds() {
     ];
     return (
         <div>
-            <section className="relative bg-black xl:pt-64 md:pt-48 pt-24 pb-10">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 pb-10">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}

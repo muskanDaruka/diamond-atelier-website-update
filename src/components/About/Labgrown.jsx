@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image';
 import React from 'react';
-import img from '../../../public/images/about/img.png';
 import background from '../../../public/images/education/background.png'
 import Link from 'next/link';
 import { motion } from 'framer-motion';

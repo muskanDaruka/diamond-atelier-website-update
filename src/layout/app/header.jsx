@@ -29,12 +29,12 @@ function Header() {
     {
       id: 2, label: "ABOUT", path: "/",
       items: [
-        { label: "LABGROWN", path: "/labgrown" },
-        { label: "DIFFERENCE", path: "/difference" },
-        { label: "METHODS OF GROWING", path: "/methods" },
-        { label: "WHY LAB", path: "/whyLab" },
-        { label: "DIAMOND SIMULANTS", path: "/simulants" },
-        { label: "MYTHS & FACTS", path: "/myth" },
+        { label: "LABGROWN", path: "/about/labgrown" },
+        { label: "DIFFERENCE", path: "/about/difference" },
+        { label: "METHODS OF GROWING", path: "/about/methods" },
+        { label: "WHY LAB", path: "/about/whyLab" },
+        { label: "DIAMOND SIMULANTS", path: "/about/simulants" },
+        { label: "MYTHS & FACTS", path: "/about/myth" },
       ],
     },
     { id: 3, label: "SHAPES", path: "/shapes", },

@@ -38,7 +38,7 @@ function Method() {
 
     return (
         <div>
-            <section className="relative bg-black xl:pt-64 md:pt-48 pt-24 p-4">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 p-4">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
