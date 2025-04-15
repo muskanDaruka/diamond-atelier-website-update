@@ -27,7 +27,7 @@ function Header() {
   const route = [
     { id: 1, label: "INVENTORY", href: "https://inventory.diamondatelier.in/" },
     {
-      id: 2, label: "ABOUT", path: "/",
+      id: 2, label: "ABOUT US", path: "/",
       items: [
         { label: "LABGROWN", path: "/about/labgrown" },
         { label: "DIFFERENCE", path: "/about/difference" },
@@ -38,15 +38,16 @@ function Header() {
       ],
     },
     { id: 3, label: "SHAPES", path: "/shapes", },
+    { id: 4, label: "BLOGS", path: "/blogs", },
     {
-      id: 4, label: "EDUCATION", path: "/education",
+      id: 5, label: "EDUCATION", path: "/education",
       items: [
         { label: "EVOLUTION", path: "#" },
         { label: "THE 4CS", path: "#" },
         { label: "ANATOMY", path: "#" },
       ]
     },
-    { id: 5, label: "CONTACT US", path: "#" },
+    { id: 6, label: "CONTACT US", path: "/contact" },
   ];
 
   return (

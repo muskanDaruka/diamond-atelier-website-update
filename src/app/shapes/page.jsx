@@ -43,6 +43,12 @@ import tbaguette from '../../../public/images/Shapes/tbaguette.png'
 import bullet from '../../../public/images/Shapes/bullet.png'
 import halfmoon from '../../../public/images/Shapes/half-moon.png'
 import cadillac from '../../../public/images/Shapes/cadillac.png'
+import squirel from '../../../public/images/Shapes/squirel.png'
+import teddy from '../../../public/images/Shapes/Teddy.png'
+import tortoise from '../../../public/images/Shapes/tortoise.png'
+import rocket from '../../../public/images/Shapes/rocket.png'
+import cut from '../../../public/images/Shapes/cut.png'
+import flower from '../../../public/images/Shapes/flower.png'
 import { motion } from "framer-motion";
 
 function Page() {
@@ -114,7 +120,13 @@ function Page() {
         { id: 39, img: cone, alt: "cone", title: "Ice-Cream" },
         { id: 40, img: car, alt: "car", title: "Car" },
         { id: 41, img: penis, alt: "penis", title: "Penis" },
-        { id: 42, img: lips, alt: "lips", title: "Lips" }
+        { id: 42, img: lips, alt: "lips", title: "Lips" },
+        { id: 43, img: squirel, alt: "squirel", title: "Squirel" },
+        { id: 44, img: teddy, alt: "teddy", title: "Teddy" },
+        { id: 45, img: rocket, alt: "rocket", title: "Rocket" },
+        { id: 46, img: cut, alt: "cut", title: "Cut" },
+        { id: 47, img: tortoise, alt: "tortoise", title: "Tortoise" },
+        { id: 48, img: flower, alt: "flower", title: "Flower" }
     ]
 
     return (

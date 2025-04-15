@@ -67,7 +67,7 @@ function Myths() {
 
                     <motion.div className="border border-[#6b6d6d]">
                         <div className="bg-black text-center p-2">
-                            <h2 className="text-[#6b6d6d] xl:text-xl md:text-md text-sm font-bold font-montserrat">{item.myth}</h2>
+                            <h2 className="text-[#6b6d6d] xl:text-xl md:text-md text-sm font-bold font-montserrat uppercase">{item.myth}</h2>
                         </div>
                         <div className="bg-[#e9e9e9] text-justify p-4">
                             <p className="text-[#6b6d6d] xl:text-base md:text-md text-xs font-medium font-montserrat">{item.fact}</p>
