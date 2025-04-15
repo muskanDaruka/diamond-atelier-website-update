@@ -1,11 +1,13 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import background from '../../../public/images/banner/contact.png'
 import Image from 'next/image'
 import { FaPhone } from 'react-icons/fa'
 import { FaLocationDot } from "react-icons/fa6";
 import { SlGlobe } from "react-icons/sl";
 import { IoMdMail } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function page() {
   const [form, setForm] = useState([])
@@ -17,6 +19,10 @@ function page() {
     e.preventDefault();
     console.log({ name, phone, message });
   }
+
+  useEffect(() => {
+    AOS.init();
+  })
 
   return (
     <div className='relative h-screen '>
@@ -30,9 +36,9 @@ function page() {
         />
         <div className='relative xl:pt-48 md:pt-48 pt-16 px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xl:gap-8 font-montserrat place-items-center'>
           <div className='xl:space-y-6 space-y-2 mb-4'>
-            <h2 className='text-white md:text-2xl xl:text-5xl text-xl font-semibold'>GET IN TOUCH WITH US</h2>
-            <p className='text-white xl:text-xl md:text-sm text-sm'>We're here to help you with any questions or concerns</p>
-            <div className='grid xl:grid-cols-2 xl:gap-6 gap-6'>
+            <h2 data-aos="fade-right" className='text-white md:text-2xl xl:text-5xl text-xl font-semibold'>GET IN TOUCH WITH US</h2>
+            <p data-aos="fade-right" className='text-white xl:text-xl md:text-sm text-sm'>We're here to help you with any questions or concerns</p>
+            <div className='grid xl:grid-cols-2 xl:gap-6 gap-6' data-aos="fade-right">
               <div className='flex items-start gap-3'>
                 <FaPhone className='text-black bg-white p-1 rounded-full size-8 md:mt-1 xl:mt-2 mt-0' />
                 <div>
@@ -70,7 +76,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className=" md:max-w-xs xl:max-w-md w-full mx-auto">
+          <div className=" md:max-w-xs xl:max-w-md w-full mx-auto" data-aos="fade-left">
             <div className='bg-[#d9d9d9] rounded-2xl shadow-xl xl:p-6 md:p-4 p-6'>
               <form className="xl:space-y-4 space-y-1" onSubmit={handleSubmit}>
                 <div>
