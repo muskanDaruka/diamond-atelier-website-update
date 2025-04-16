@@ -38,7 +38,7 @@ function Header() {
       ],
     },
     { id: 3, label: "SHAPES", path: "/shapes", },
-    { id: 4, label: "BLOGS", path: "/blogs", },
+    // { id: 4, label: "BLOGS", path: "/blogs", },
     {
       id: 5, label: "EDUCATION", path: "/education",
       items: [
