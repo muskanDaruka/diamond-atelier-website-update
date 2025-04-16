@@ -79,7 +79,7 @@ function Page() {
       description:
         "We are proud to introduce our new timeless  range of lab-grown diamond jewelry - featuring rings, bracelets, necklaces, and earrings.",
       type: "video",
-      media: "/images/about/Jewelry - DA video.mp4",
+      media: "/images/about/jewellery.mp4",
       imagePosition: "right",
     },
   ];
