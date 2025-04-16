@@ -74,7 +74,7 @@ function Page() {
       imagePosition: "left",
     },
     {
-      title: "JEWELLERY",
+      title: "JEWELRY",
       subtitle: "Diamonds over 100+ shapes",
       description:
         "We are proud to introduce our new timeless  range of lab-grown diamond jewelry - featuring rings, bracelets, necklaces, and earrings.",
