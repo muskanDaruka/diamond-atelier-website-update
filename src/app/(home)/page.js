@@ -161,7 +161,7 @@ function Page() {
           <div
             className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 xl:mt-0"
           >
-            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-montserrat" data-aos="fade-up" data-aos-duration="5000">
+            <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-oldstandardtt" data-aos="fade-up" data-aos-duration="5000">
               {item.title}
             </h2>
             {item.subtitle && (
@@ -182,7 +182,7 @@ function Page() {
             className="flex flex-col items-center text-center h-full"
           >
             <h2
-              className="text-white font-bold uppercase px-4 xl:text-3xl md:text-2xl text-xl font-montserrat"
+              className="text-white italic px-4 xl:text-3xl md:text-2xl text-xl font-migra"
               data-aos="fade-down"
             >
               {item.title}
