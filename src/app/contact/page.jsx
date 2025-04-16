@@ -86,7 +86,7 @@ function page() {
                     id="name"
                     value={name}
                     placeholder="Enter your Full Name"
-                    className="bg-white rounded-full w-full xl:py-2 py-1 px-4 text-gray-700 shadow focus:outline-none"
+                    className="bg-white rounded-full w-full xl:py-2 py-1 px-4 font-medium shadow focus:outline-none"
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
@@ -98,7 +98,7 @@ function page() {
                     value={phone}
                     placeholder='+1 123 456 7890'
                     onChange={(e) => setPhone(e.target.value)}
-                    className="bg-white rounded-full w-full xl:py-2 py-1 px-4 text-gray-700 shadow focus:outline-none"
+                    className="bg-white rounded-full w-full xl:py-2 py-1 px-4 font-medium shadow focus:outline-none"
                   />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ function page() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Write your message..."
-                    className="bg-white w-full px-4 xl:py-2 py-0 rounded-md text-gray-700 shadow focus:outline-none"
+                    className="bg-white w-full px-4 xl:py-2 py-0 rounded-md font-medium shadow focus:outline-none"
                   />
                 </div>
                 <div className="text-center">
