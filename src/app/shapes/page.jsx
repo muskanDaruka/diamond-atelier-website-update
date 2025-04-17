@@ -130,7 +130,7 @@ function Page() {
     ]
 
     return (
-        <div className="bg-black py-8 xl:pt-48 md:pt-48 pt-22">
+        <div className="bg-black py-8 xl:pt-48 md:pt-48 pt-22 cursor-pointer">
             <h2 className="text-white text-center font-bold font-oldstandardtt xl:text-4xl md:text-2xl text-md pb-6">
                 DIAMOND SHAPES WE OFFER!
             </h2>

@@ -113,7 +113,7 @@ function page() {
                   />
                 </div>
                 <div className="text-center">
-                  <button type="submit" className="bg-white text-[#111c4f] rounded-full px-8 xl:py-2 py-1 text-base font-bold hover:bg-[#0e1740] transition">
+                  <button type="submit" className="bg-white text-[#111c4f] rounded-full px-8 xl:py-2 py-1 text-base font-bold hover:bg-gray-400 hover:text-white transition">
                     Submit
                   </button>
                 </div>
