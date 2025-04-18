@@ -1,47 +1,36 @@
 "use client";
 import React from 'react'
-import background from '../../../public/images/education/background.png'
-import Image from 'next/image'
-import { motion } from "framer-motion";
-import Link from 'next/link';
+import img1 from '../../../public/images/education/img1.png'
+import img2 from '../../../public/images/education/img2.png'
+import img3 from '../../../public/images/education/img3.png'
+import img4 from '../../../public/images/education/img4.png'
+import Image from 'next/image';
 
 const page = () => {
-  
-  const list = [
-    { id: 1, title: "EVOLUTION", path: "#" },
-    { id: 2, title: "THE 4CS", path: "#" },
-    { id: 3, title: "ANATOMY", path: "#" }
-    // { id: 4, title: "Why Lab Grown?", path: "/whyLab" },
-    // { id: 5, title: "Diamond Simulants", path: "/simulants" },
-    // { id: 6, title: "Myths & Facts", path: "/myth" },
-  ];
+  const evolution = [
+    { id: 1, img: img1 },
+    { id: 2, img: img2 },
+    { id: 3, img: img3 },
+    { id: 4, img: img4 },
+  ]
 
   return (
-    <div>
-      <section className="relative pt-36 flex justify-center items-center">
-        <Image
-          src={background}
-          alt="background-img"
-          className="w-full h-auto object-cover"
-        />
-        <div className="absolute top-48 grid xl:grid-cols-3 md:grid-cols-3 grid-cols-1 px-4 xl:px-10 p-8">
-        {list.map((item, index) => (
-                        <motion.div 
-                            key={item.id} 
-                            className="bg-transparent xl:m-5 xl:p-5 p-4 shadow-md border border-[#6b6d6d] text-cente"
-                            initial={{ y: 20, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <Link href={item.path} className="text-[#6b6d6d] font-medium hover:underline hover:text-black text-xl font-montserrat r">
-                                {item.title}
-                            </Link>
-                        </motion.div>
-                    ))}
+    <>
+      <section className="relative pt-24 bg-black min-h-screen grid content-center">
+        <h2 data-aos="fade-down" className='text-[#6b6d6d] text-center text-2xl font-montserrat font-medium'>At Diamond Atelier, </h2>
+        <p data-aos="fade-down" className='text-[#6b6d6d] text-center text-6xl font-medium' style={{ fontFamily: 'Edwardian Script ITC' }}> artist shapes stones</p>
+        <div className='grid xl:grid-cols-4 md:grid-cols-4 grid-cols-2 place-items-center'>
+          {evolution.map((item) => (
+            <div key={item.id}>
+              <Image
+                src={item.img}
+                alt="Evolution-img"
+              />
+            </div>
+          ))}
         </div>
       </section>
-    </div>
+    </>
   )
 }
 

@@ -58,7 +58,7 @@ function Page() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, 
+                staggerChildren: 0.2,
             },
         },
     };
@@ -68,7 +68,7 @@ function Page() {
         visible: {
             opacity: 1,
             x: 0,
-            transition: { duration: 0.6 }, 
+            transition: { duration: 0.6 },
         },
     };
 
@@ -130,81 +130,95 @@ function Page() {
     ]
 
     return (
-        <div className="bg-black py-8 xl:pt-48 md:pt-48 pt-22 cursor-pointer">
-            <h2 className="text-white text-center font-bold font-oldstandardtt xl:text-4xl md:text-2xl text-md pb-6">
-                DIAMOND SHAPES WE OFFER!
-            </h2>
-            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
-                BASIC SHAPES
-            </h3>
-            <motion.div
-                variants={fadeRight}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.2 }}
-                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
-            >
-                {shapes.map((item) => (
-                    <motion.div
-                        variants={childVariant}
-                        className="text-center"
-                        key={item.id}
-                    >
-                        <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                        <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
-                            {item.title}
-                        </span>
-                    </motion.div>
-                ))}
-            </motion.div>
-            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
-                SIDE STONE SHAPES
-            </h3>
-            <motion.div
-                variants={fadeRight}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.2 }}
-                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
-            >
-                {sideStone.map((item) => (
-                    <motion.div
-                        variants={childVariant}
-                        className="text-center"
-                        key={item.id}
-                    >
-                        <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                        <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
-                            {item.title}
-                        </span>
-                    </motion.div>
-                ))}
-            </motion.div>
-            <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
-                EXOTIC SHAPES
-            </h3>
-            <motion.div
-                variants={fadeRight}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.2 }}
-                className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
-            >
-                {exoticShapes.map((item) => (
-                    <motion.div
-                        variants={childVariant}
-                        className="text-center"
-                        key={item.id}
-                    >
-                        <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                        <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
-                            {item.title}
-                        </span>
-                    </motion.div>
-                ))}
-            </motion.div>
+        <div className="bg-black py-8 xl:pt-32 md:pt-32 pt-22 cursor-pointer">
+            <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-36">
+                <video
+                    className="absolute inset-0 w-full h-full object-cover opacity-80"
+                    autoPlay
+                    muted
+                    loop
+                >
+                    <source
+                        src="/images/about/Shapes.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+            <div className='pt-4'>
+                <h2 className="text-white text-center font-bold font-oldstandardtt xl:text-4xl md:text-2xl text-md pb-6">
+                    DIAMOND SHAPES WE OFFER!
+                </h2>
+                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
+                    BASIC SHAPES
+                </h3>
+                <motion.div
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+                >
+                    {shapes.map((item) => (
+                        <motion.div
+                            variants={childVariant}
+                            className="text-center"
+                            key={item.id}
+                        >
+                            <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
+                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                                {item.title}
+                            </span>
+                        </motion.div>
+                    ))}
+                </motion.div>
+                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+                    SIDE STONE SHAPES
+                </h3>
+                <motion.div
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+                >
+                    {sideStone.map((item) => (
+                        <motion.div
+                            variants={childVariant}
+                            className="text-center"
+                            key={item.id}
+                        >
+                            <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
+                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                                {item.title}
+                            </span>
+                        </motion.div>
+                    ))}
+                </motion.div>
+                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+                    EXOTIC SHAPES
+                </h3>
+                <motion.div
+                    variants={fadeRight}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    className="grid place-items-center grid-cols-2 md:grid-cols-6 gap-y-6 px-4"
+                >
+                    {exoticShapes.map((item) => (
+                        <motion.div
+                            variants={childVariant}
+                            className="text-center"
+                            key={item.id}
+                        >
+                            <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
+                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                                {item.title}
+                            </span>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
         </div>
-
     )
 }
 
