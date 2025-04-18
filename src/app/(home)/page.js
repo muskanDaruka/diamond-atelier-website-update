@@ -110,7 +110,7 @@ function Page() {
   })
 
   return (
-    <div className="bg-black xl:pt-6 md:pt-18 pt-8 pb-8">
+    <div className="bg-black xl:pt-10 md:pt-18 pt-8 pb-8">
       <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-36">
         <video
           className="absolute inset-0 w-full h-full object-cover opacity-80"
@@ -119,7 +119,7 @@ function Page() {
           loop
         >
           <source
-            src="https://media-hosting.imagekit.io/17238941335f41d0/WhatsApp%20Video%202025-04-04%20at%206.32.44%20PM.mp4?Expires=1838380115&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nZxoh97saKK~I0-2fPvophTtLg25kXGzwBMCqKYN6jGasGac70NwW5OR~9jK2yk7-JFCuU-dK-UrTdUoa4VsrWBiWfw0aqWF2w0j7Fx7XM3n~5wjCQ00JDk7h8dmmF4NHKlz2Cu~S2wL1UOe-2Mts8w0wPwX2XQ1TXlVrNeG9cefpN94UZueXyr~XVkLDgWMisEqtZRm49HZ8CzZdPA9O59mokxbaHsLjtvMGfoKJ~W7yHumcx40MIwceipeIldzR1dGk-3Tin4KqZ7PRxRQRVSUYVdkCNcyGk5on6H-xPFJ6UPBWwtXecxlN1IGUZJsVQaJcRXbRpHRzsmU7NiGtA__"
+            src="/images/about/home-banner.mp4"
             type="video/mp4"
           />
         </video>
