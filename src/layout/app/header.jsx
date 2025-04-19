@@ -27,7 +27,7 @@ function Header() {
   const route = [
     { id: 1, label: "INVENTORY", href: "https://inventory.diamondatelier.in/" },
     {
-      id: 2, label: "ABOUT US", path: "/",
+      id: 2, label: "ABOUT US", path: "#",
       items: [
         { label: "LABGROWN", path: "/about/labgrown" },
         { label: "DIFFERENCE", path: "/about/difference" },
