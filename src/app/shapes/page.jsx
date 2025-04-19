@@ -130,8 +130,8 @@ function Page() {
     ]
 
     return (
-        <div className="bg-black py-8 xl:pt-32 md:pt-32 pt-22 cursor-pointer">
-            <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-36">
+        <div className="bg-black py-8 xl:pt-32 md:pt-32 pt-2 cursor-pointer">
+            <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-14">
                 <video
                     className="absolute inset-0 w-full h-full object-cover opacity-80"
                     autoPlay
