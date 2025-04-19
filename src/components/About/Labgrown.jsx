@@ -70,7 +70,7 @@ function Labgrown() {
     //     </section>
     // </div>
     <div>
-      <section className="relative xl:pt-36 md:pt-24 pt-32 flex justify-center items-center h-screen">
+      <section className="relative xl:pt-36 md:pt-24 pt-24 flex justify-center items-center h-screen">
         <Image
           src={background}
           alt="background-img"
