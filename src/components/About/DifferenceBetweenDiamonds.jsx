@@ -66,7 +66,7 @@ function DifferenceBetweenDiamonds() {
     ];
     return (
         <div>
-            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 pb-10">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 pb-10 cursor-pointer">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ function DifferenceBetweenDiamonds() {
                     </div>
                 </motion.div>
             </section>
-            <section className="bg-[#e9e9e9] p-6">
+            <section className="bg-[#e9e9e9] p-6 cursor-pointer">
                 <motion.div
                     className="flex flex-col items-center xl:text-left md:text-left text-center h-full"
                     initial="hidden"
@@ -161,7 +161,7 @@ function DifferenceBetweenDiamonds() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black text-white'>
+            <section className='bg-black text-white cursor-pointer'>
                 <Table tableData={tableData} className="border-separate border-spacing-y-4"/>
             </section>
         </div>

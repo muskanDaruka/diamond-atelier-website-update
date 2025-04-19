@@ -31,7 +31,7 @@ function Myths() {
 
     return (
         <div>
-            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 cursor-pointer">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ function Myths() {
                 <Image src={myth} className='object-contain w-full' alt='myth'/>
             </section>
             <section
-            className="flex flex-col gap-8 bg-black p-8"
+            className="flex flex-col gap-8 bg-black p-8 cursor-pointer"
         >
             {mythsAndFacts.map((item, index) => (
                 <motion.div

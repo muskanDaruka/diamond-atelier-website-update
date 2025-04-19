@@ -38,7 +38,7 @@ function Method() {
 
     return (
         <div>
-            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 p-4">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 p-4 cursor-pointer">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ function Method() {
                     <motion.button whileHover={{ scale: 1.1 }} className="bg-[#777678] text-white px-10 py-1">CVD</motion.button>
                 </div>
             </section>
-            <section className="bg-[#e9e9e9] p-6">
+            <section className="bg-[#e9e9e9] p-6 cursor-pointer">
                 <motion.p
                     initial="hidden"
                     whileInView="visible"

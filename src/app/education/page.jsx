@@ -16,7 +16,7 @@ const page = () => {
 
   return (
     <>
-      <section className="relative pt-24 bg-black min-h-screen grid content-center">
+      <section className="relative pt-24 bg-black min-h-screen grid content-center cursor-pointer">
         <h2 data-aos="fade-down" className='text-[#6b6d6d] text-center text-2xl font-montserrat font-medium'>At Diamond Atelier, </h2>
         <p data-aos="fade-down" className='text-[#6b6d6d] text-center text-6xl font-medium' style={{ fontFamily: 'Edwardian Script ITC' }}> artist shapes stones</p>
         <div className='grid xl:grid-cols-4 md:grid-cols-4 grid-cols-2 place-items-center'>

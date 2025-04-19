@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Table = ({ tableData }) => {
     return (
-        <div className="p-6">
+        <div className="p-6 cursor-pointer">
             {tableData.map(({ headers, rows, colSpans, title }, tableIndex) => (
                 <motion.div
                     key={tableIndex}

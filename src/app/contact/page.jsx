@@ -34,7 +34,7 @@ function page() {
           objectFit="fill"
           priority
         />
-        <div className='relative xl:pt-48 md:pt-48 pt-16 px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xl:gap-8 font-montserrat place-items-center'>
+        <div className='relative xl:pt-48 md:pt-48 pt-16 px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xl:gap-8 font-montserrat place-items-center cursor-pointer'>
           <div className='xl:space-y-6 space-y-2 mb-4'>
             <h2 data-aos="fade-right" className='text-white md:text-2xl xl:text-5xl text-xl font-semibold hover:text-[#777678]'>GET IN TOUCH WITH US</h2>
             <p data-aos="fade-right" className='text-white xl:text-xl md:text-sm text-sm hover:text-[#777678]'>We're here to help you with any questions or concerns</p>

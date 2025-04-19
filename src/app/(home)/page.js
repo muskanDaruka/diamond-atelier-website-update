@@ -110,7 +110,7 @@ function Page() {
   })
 
   return (
-    <div className="bg-black xl:pt-10 md:pt-18 pt-8 pb-8">
+    <div className="bg-black xl:pt-10 md:pt-18 pt-8 pb-8 cursor-pointer">
       <div className="relative w-full h-[28vh] md:h-[90vh] xl:h-screen overflow-hidden xl:mt-0 md:mt-0 mt-36">
         <video
           className="absolute inset-0 w-full h-full object-cover opacity-80"

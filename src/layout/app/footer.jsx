@@ -36,7 +36,7 @@ function Footer() {
     ];
 
     return (
-        <footer className="relative py-8 xl:py-10 bg-white px-10">
+        <footer className="relative py-8 xl:py-10 bg-white px-10 cursor-pointer">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center xl:text-left">
                 {footerList.map((section) => (
                     <div key={section.id}>

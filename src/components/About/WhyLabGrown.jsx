@@ -19,7 +19,7 @@ function WhyLabGrown() {
     ]
     return (
         <div>
-            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 p-6 h-screen">
+            <section className="relative bg-black xl:pt-48 md:pt-48 pt-24 p-6 h-screen cursor-pointer">
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ function WhyLabGrown() {
                 </motion.h1>
                 <Image src={volcano} className='object-contain w-full' alt='diamond' />
             </section>
-            <section className='w-full bg-[#e9e9e9]'>
+            <section className='w-full bg-[#e9e9e9] cursor-pointer'>
                 <div className="mx-auto p-4 grid grid-cols-1">
                     {list.map((item, index) => (
                         <motion.div
