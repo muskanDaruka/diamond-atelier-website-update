@@ -159,7 +159,7 @@ function Page() {
             )}
           </motion.div>
           <div
-            className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 xl:mt-0"
+            className="text-center md:text-left xl:text-left xl:w-1/2 mt-8 md:mt-0 xl:mt-0"
           >
             <h2 className="text-white font-bold xl:text-4xl md:text-2xl text-xl px-4 uppercase font-oldstandardtt" data-aos="fade-up" data-aos-duration="5000">
               {item.title}
