@@ -148,7 +148,7 @@ function Page() {
                 <h2 className="text-white text-center font-bold font-oldstandardtt xl:text-4xl md:text-2xl text-md pb-6">
                     DIAMOND SHAPES WE OFFER!
                 </h2>
-                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
+                <h3 className="text-center text-white font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mb-4 mx-6 rounded">
                     BASIC SHAPES
                 </h3>
                 <motion.div
@@ -165,13 +165,13 @@ function Page() {
                             key={item.id}
                         >
                             <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                            <span className="inline-block text-white px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                                 {item.title}
                             </span>
                         </motion.div>
                     ))}
                 </motion.div>
-                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+                <h3 className="text-white text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                     SIDE STONE SHAPES
                 </h3>
                 <motion.div
@@ -188,13 +188,13 @@ function Page() {
                             key={item.id}
                         >
                             <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                            <span className="inline-block text-white px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                                 {item.title}
                             </span>
                         </motion.div>
                     ))}
                 </motion.div>
-                <h3 className="bg-[#d9d9d9] text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
+                <h3 className="text-white text-center font-bold font-montserrat xl:text-3xl md:text-2xl text-md py-2 mt-10 mb-4 mx-6 rounded">
                     EXOTIC SHAPES
                 </h3>
                 <motion.div
@@ -211,7 +211,7 @@ function Page() {
                             key={item.id}
                         >
                             <Image src={item.img} alt={item.alt} className="bg-black mx-auto" />
-                            <span className="inline-block bg-white border border-gray-200 px-4 py-1 mt-2 text-sm font-montserrat font-medium">
+                            <span className="inline-block text-white px-4 py-1 mt-2 text-sm font-montserrat font-medium">
                                 {item.title}
                             </span>
                         </motion.div>
