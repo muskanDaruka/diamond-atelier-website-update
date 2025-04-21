@@ -39,7 +39,7 @@ function page() {
             <h2 data-aos="fade-right" className='text-white md:text-2xl xl:text-5xl text-xl font-semibold hover:text-[#777678]'>GET IN TOUCH WITH US</h2>
             <p data-aos="fade-right" className='text-white xl:text-xl md:text-sm text-sm hover:text-[#777678]'>We're here to help you with any questions or concerns</p>
             <div className='grid xl:grid-cols-2 xl:gap-6 gap-6' data-aos="fade-right">
-              <div className='flex items-start gap-3'>
+              <div className='flex items-start gap-3' >
                 <FaPhone className='text-black bg-white p-1 rounded-full size-8 md:mt-1 xl:mt-2 mt-0' />
                 <div>
                   <h4 className='text-white font-medium xl:text-base md:text-sm text-xs hover:text-[#777678]'>Phone</h4>
@@ -76,8 +76,8 @@ function page() {
               </div>
             </div>
           </div>
-          <div className=" md:max-w-xs xl:max-w-md w-full mx-auto" data-aos="fade-left">
-            <div className='bg-[#d9d9d9] rounded-2xl shadow-xl xl:p-6 md:p-4 p-6'>
+          <div className=" md:max-w-xs xl:max-w-md w-full mx-auto" >
+            <div className='bg-[#d9d9d9] rounded-2xl shadow-xl xl:p-6 md:p-4 p-6' data-aos="fade-left">
               <form className="xl:space-y-4 space-y-1" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor='name' className='text-[#111c4f] block mb-1 xl:text-base md:text-sm text-xs font-medium'>Full Name:</label>
