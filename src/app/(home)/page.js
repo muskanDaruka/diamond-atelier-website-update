@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import certified from "../../../public/images/about/certified.png";
-import melee from "../../../public/images/about/starmele-img.png";
+import melee from "../../../public/images/about/star-melee.png";
 import money from "../../../public/images/banner/money.png";
 import certificate from "../../../public/images/banner/certificate.png";
 import memo from "../../../public/images/banner/memo.png";
